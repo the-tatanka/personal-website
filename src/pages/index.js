@@ -12,17 +12,15 @@ function HomepageHeader() {
     <div className={clsx("hero hero--dark", styles.heroBackground)}>
       <div className="container">
         <h1 className="hero__title margin-bottom--md margin-top--xl">
-          software
+          Hi, I'm Sebastian.
         </h1>
-        <p className="hero__subtitle margin-bottom--xl">
-          Don't Optimize Something That Shouldn't Exist.
-        </p>
+        <p className="hero__subtitle margin-bottom--xl">I love software.</p>
         <div>
           <Link
             className="button button--primary button--lg margin-bottom--xl"
             to="/docs/intro"
           >
-            Get Started
+            Get Started ⇩
           </Link>
         </div>
       </div>
@@ -39,7 +37,27 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <div className="container margin-top--xl margin-bottom--xl">
-          <p>Parallel to biking</p>
+          <p>I'm passionate about coding, cycling, and sharing what I know.</p>
+
+          <p>Welcome to my home on the internet!</p>
+        </div>
+
+        <div className={styles.slides}>
+          <section className={styles.slide}>
+            <h1>Title 1</h1>
+          </section>
+
+          <section className={styles.slide}>
+            <h1>Title 2</h1>
+          </section>
+
+          <section className={styles.slide}>
+            <h1>Title 3</h1>
+          </section>
+
+          <section className={styles.slide}>
+            <h1>Title 4</h1>
+          </section>
         </div>
       </main>
     </Layout>

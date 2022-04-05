@@ -29,3 +29,16 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.slides {
+  scroll-snap-type: y mandatory;
+}
+
+.slide {
+  block-size: 100vh;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+
+  display: grid;
+  place-items: center;
+}
