@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgithub_pages_docusaurus_template=self.webpackChunkgithub_pages_docusaurus_template||[]).push([[716],{88623:function(a){a.exports=JSON.parse('{"allTagsPath":"/github-pages-docusaurus-template/blog/tags","name":"facebook","count":1,"permalink":"/github-pages-docusaurus-template/blog/tags/facebook"}')}}]);
