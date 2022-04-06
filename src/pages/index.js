@@ -5,6 +5,8 @@ import Link from "@docusaurus/Link";
 // import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 
+import Image from "../../static/img/bike_1.webp";
+
 function HomepageHeader() {
   // const { siteConfig } = useDocusaurusContext();
 
@@ -42,22 +44,79 @@ export default function Home() {
           <p>Welcome to my home on the internet!</p>
         </div>
 
-        <div className={styles.slides}>
-          <section className={styles.slide}>
-            <h1>Title 1</h1>
-          </section>
+        <div className="container">
+          <div className="row">
+            <div className="col col--6">
+              <div
+                className={clsx(
+                  "card margin-bottom--lg",
+                  styles.projectCard,
+                  styles.firstProject
+                )}
+              >
+                <Link className="margin-bottom--xl" to="/docs/intro">
+                  <h1
+                    className={clsx(
+                      "padding-top--xl padding-left--xl",
+                      styles.cardTitle
+                    )}
+                  >
+                    DevSecOps 1
+                  </h1>
+                </Link>
+              </div>
+            </div>
 
-          <section className={styles.slide}>
-            <h1>Title 2</h1>
-          </section>
+            <div className="col col--6">
+              <div
+                className={clsx(
+                  "card margin-bottom--lg",
+                  styles.projectCard,
+                  styles.firstProject
+                )}
+              >
+                <Link className="margin-bottom--xl" to="/docs/intro">
+                  <h1 className={clsx("padding--xl", styles.cardTitle)}>
+                    DevSecOps 2
+                  </h1>
+                </Link>
+              </div>
+            </div>
 
-          <section className={styles.slide}>
-            <h1>Title 3</h1>
-          </section>
+            <div className="col col--6">
+              <div
+                className={clsx(
+                  "card margin-bottom--lg",
+                  styles.projectCard,
+                  styles.firstProject
+                )}
+              >
+                <Link className="margin-bottom--xl" to="/docs/intro">
+                  <h1 className={clsx("padding--xl", styles.cardTitle)}>
+                    DevSecOps 3
+                  </h1>
+                </Link>
+              </div>
+            </div>
+          </div>
 
-          <section className={styles.slide}>
-            <h1>Title 4</h1>
-          </section>
+          <div className={styles.slides}>
+            <section className={styles.slide}>
+              <h1>Title 1</h1>
+            </section>
+
+            <section className={styles.slide}>
+              <h1>Title 2</h1>
+            </section>
+
+            <section className={styles.slide}>
+              <h1>Title 3</h1>
+            </section>
+
+            <section className={styles.slide}>
+              <h1>Title 4</h1>
+            </section>
+          </div>
         </div>
       </main>
     </Layout>

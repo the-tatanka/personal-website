@@ -42,3 +42,34 @@
   display: grid;
   place-items: center;
 }
+
+.projectCard {
+  block-size: 40vh;
+  /* place-items: center; */
+}
+
+.cardTitle {
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--ifm-color-white);
+}
+
+.cardTitle:hover {
+  color: var(--ifm-color-primary);
+}
+
+.firstProject {
+  background: url(../../static/img/bike_2.webp);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.secondProject {
+  background: url(../../static/img/bike_3.webp);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
