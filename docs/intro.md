@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Projects Intro
+# Intro
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
@@ -55,3 +55,58 @@ graph TD;
     B-->D;
     C-->D;
 ```
+
+## Code Blocks
+
+Markdown code blocks are supported with Syntax highlighting.
+
+```jsx title="src/components/HelloDocusaurus.js"
+function HelloDocusaurus() {
+  return <h1>Hello, Docusaurus!</h1>;
+}
+```
+
+```js title="sidebars.js"
+module.exports = {
+  projectsSidebar: [
+    {
+      type: "category",
+      label: "Projects",
+      // highlight-next-line
+      items: ["hello"],
+    },
+  ],
+};
+```
+
+## Admonitions
+
+Docusaurus has a special syntax to create admonitions and callouts:
+
+    :::tip My tip
+
+    Use this awesome feature option
+
+    :::
+
+    :::danger Take care
+
+    This action is dangerous
+
+    :::
+
+:::tip My tip
+
+Use this awesome feature option
+
+:::
+
+:::danger Take care
+
+This action is dangerous
+
+:::
+
+## Images
+
+![Docusaurus logo](/img/bike_1.jpg)

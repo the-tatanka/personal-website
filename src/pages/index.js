@@ -57,11 +57,11 @@ export default function Home() {
                 <Link className="margin-bottom--xl" to="/docs/intro">
                   <h1
                     className={clsx(
-                      "padding-top--xl padding-left--xl",
+                      "padding-top--xl padding-left--lg",
                       styles.cardTitle
                     )}
                   >
-                    DevSecOps 1
+                    Security Toolchain
                   </h1>
                 </Link>
               </div>
