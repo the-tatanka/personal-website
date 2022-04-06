@@ -1,0 +1,12 @@
+.heroBackground {
+  background: url(../../static/img/bike_1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  block-size: 80vh;
+}
+
+.heroTitle {
+  font-size: 17rem;
+  color: var(--ifm-color-primary);
+}

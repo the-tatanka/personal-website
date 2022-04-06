@@ -1,0 +1,14 @@
+.projectCard {
+  block-size: 40vh;
+  /* place-items: center; */
+}
+
+.cardTitle {
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--ifm-color-white);
+}
+
+.cardTitle:hover {
+  color: var(--ifm-color-primary);
+}

@@ -1,6 +1,6 @@
 ---
-slug: welcome
-title: Welcome
+slug: why-you-should-have-a-personal-website
+title: Why you should have a personal website
 authors: [slorber, yangshun]
 tags: [facebook, hello, docusaurus]
 ---

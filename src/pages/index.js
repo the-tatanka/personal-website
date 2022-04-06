@@ -1,34 +1,13 @@
 import React from "react";
-import clsx from "clsx";
 import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
+import clsx from "clsx";
 // import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 
-import Image from "../../static/img/bike_1.webp";
-
-function HomepageHeader() {
-  // const { siteConfig } = useDocusaurusContext();
-
-  return (
-    <div className={clsx("hero hero--dark", styles.heroBackground)}>
-      <div className="container">
-        <h1 className="hero__title margin-bottom--md margin-top--xl">
-          Hi, I'm Sebastian.
-        </h1>
-        <p className="hero__subtitle margin-bottom--xl">I love software.</p>
-        <div>
-          <Link
-            className="button button--primary button--lg margin-bottom--xl"
-            to="/docs/intro"
-          >
-            Get Started ⇩
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-}
+import HomepageHeader from "../components/HomepageHeader";
+import Slide from "../components/Slide";
+import ProjectContainer from "../components/ProjectContainer";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
   return (
@@ -37,87 +16,217 @@ export default function Home() {
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
+
       <main>
-        <div className="container margin-top--xl margin-bottom--xl">
-          <p>I'm passionate about coding, cycling, and sharing what I know.</p>
+        <Slide>
+          <p className={clsx(styles.highlight, styles.text)}>
+            I'm Sebastian — an ex freelance digital product creator. I'm
+            passionate about software, cycling, and sharing what I know.
+            Currently employed as security expert at Mercedes Benz Tech
+            Innovation based in Ulm, Germany.
+          </p>
 
-          <p>Welcome to my home on the internet!</p>
-        </div>
+          <p className={styles.text}>
+            ... Also, I want my <i>Google Developer Expert</i> title back. For
+            that, I need to build up reach.
+          </p>
 
-        <div className="container">
+          <p className={styles.text}>
+            My writing style is direct and practical - no bs. Given that I am an
+            enthusiastic cyclist, I post bike pictures of me.
+          </p>
+
+          <p className={styles.text}>Welcome to my home on the internet!</p>
+        </Slide>
+
+        <ProjectContainer>
+          <ProjectCard
+            stylesProject={styles.firstProject}
+            projectTitle="Security Toolchain"
+            projectLink="/docs/intro"
+          />
+
+          <ProjectCard
+            stylesProject={styles.secondProject}
+            projectTitle="Interactive Presentations"
+            projectLink="/docs/intro"
+          />
+
+          <ProjectCard
+            stylesProject={styles.thirdProject}
+            projectTitle="Low Code"
+            projectLink="/docs/intro"
+          />
+        </ProjectContainer>
+
+        <Slide>
           <div className="row">
-            <div className="col col--6">
-              <div
-                className={clsx(
-                  "card margin-bottom--lg",
-                  styles.projectCard,
-                  styles.firstProject
-                )}
-              >
-                <Link className="margin-bottom--xl" to="/docs/intro">
-                  <h1
+            <div className="col col--5">
+              <h1 className={styles.title}>Writing</h1>
+            </div>
+
+            <div className="col col--7">
+              <div className={clsx(styles.listingEnd)}>
+                <h3 className={styles.position}>Article Title</h3>
+
+                <p>
+                  <span
                     className={clsx(
-                      "padding-top--xl padding-left--lg",
-                      styles.cardTitle
+                      "badge badge--secondary",
+                      styles.articleStatus
                     )}
                   >
-                    Security Toolchain
-                  </h1>
-                </Link>
+                    New
+                  </span>{" "}
+                  July 2021 ·{" "}
+                  <a
+                    className=""
+                    href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Medium article X
+                  </a>
+                </p>
               </div>
-            </div>
 
-            <div className="col col--6">
-              <div
-                className={clsx(
-                  "card margin-bottom--lg",
-                  styles.projectCard,
-                  styles.firstProject
-                )}
-              >
-                <Link className="margin-bottom--xl" to="/docs/intro">
-                  <h1 className={clsx("padding--xl", styles.cardTitle)}>
-                    DevSecOps 2
-                  </h1>
-                </Link>
+              <div className={clsx("margin-top--lg", styles.listingEnd)}>
+                <h3 className={styles.position}>Article Title</h3>
+                <p>
+                  <span
+                    className={clsx(
+                      "badge badge--secondary",
+                      styles.articleStatus
+                    )}
+                  >
+                    New
+                  </span>{" "}
+                  July 2021 ·{" "}
+                  <a
+                    className=""
+                    href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Medium article X
+                  </a>
+                </p>
               </div>
-            </div>
 
-            <div className="col col--6">
-              <div
-                className={clsx(
-                  "card margin-bottom--lg",
-                  styles.projectCard,
-                  styles.firstProject
-                )}
-              >
-                <Link className="margin-bottom--xl" to="/docs/intro">
-                  <h1 className={clsx("padding--xl", styles.cardTitle)}>
-                    DevSecOps 3
-                  </h1>
-                </Link>
+              <div className={clsx("margin-top--lg", styles.listingEnd)}>
+                <h3 className={styles.position}>Article Title</h3>
+                <p>
+                  July 2021 ·{" "}
+                  <a
+                    className=""
+                    href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Medium article X
+                  </a>
+                </p>
+              </div>
+
+              <div className={clsx("margin-top--lg", styles.listingEnd)}>
+                <h3 className={styles.position}>Article Title</h3>
+                <p>
+                  July 2021 ·{" "}
+                  <a
+                    className=""
+                    href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Medium article X
+                  </a>
+                </p>
+              </div>
+
+              <div className={clsx("margin-top--lg", styles.listingEnd)}>
+                <h3 className={styles.position}>Article Title</h3>
+                <p>
+                  July 2021 ·{" "}
+                  <a
+                    className=""
+                    href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Medium article X
+                  </a>
+                </p>
+              </div>
+
+              <div className={clsx("margin-top--lg")}>
+                <h3 className={styles.position}>Article Title</h3>
+                <p>
+                  July 2021 ·{" "}
+                  <a
+                    className=""
+                    href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Medium article X
+                  </a>
+                </p>
               </div>
             </div>
           </div>
+        </Slide>
 
-          <div className={styles.slides}>
-            <section className={styles.slide}>
-              <h1>Title 1</h1>
-            </section>
+        <Slide>
+          <div className="row">
+            <div className="col col--5">
+              <h1 className={styles.title}>Experience</h1>
+            </div>
 
-            <section className={styles.slide}>
-              <h1>Title 2</h1>
-            </section>
+            <div className="col col--7">
+              <div className={clsx(styles.listingEnd)}>
+                <h3 className={styles.position}>Position</h3>
 
-            <section className={styles.slide}>
-              <h1>Title 3</h1>
-            </section>
+                <h4 className={styles.company}>Company</h4>
 
-            <section className={styles.slide}>
-              <h1>Title 4</h1>
-            </section>
+                <p className={styles.date}>October 2020 - July 2021</p>
+
+                <ul className={styles.text}>
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Milk</li>
+                </ul>
+              </div>
+
+              <div className={clsx("margin-top--lg", styles.listingEnd)}>
+                <h3 className={styles.position}>Position</h3>
+
+                <h4 className={styles.company}>Company</h4>
+
+                <p className={styles.date}>October 2020 - July 2021</p>
+
+                <ul className={styles.text}>
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Milk</li>
+                </ul>
+              </div>
+
+              <div className={clsx("margin-top--lg")}>
+                <h3 className={styles.position}>Position</h3>
+
+                <h4 className={styles.company}>Company</h4>
+
+                <p className={styles.date}>October 2020 - July 2021</p>
+
+                <ul className={styles.text}>
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Milk</li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
+        </Slide>
       </main>
     </Layout>
   );

@@ -18,48 +18,8 @@
 }
 */
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.heroBackground {
-  background: url(../../static/img/bike_1.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.slides {
-  scroll-snap-type: y mandatory;
-}
-
-.slide {
-  block-size: 100vh;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-
-  display: grid;
-  place-items: center;
-}
-
-.projectCard {
-  block-size: 40vh;
-  /* place-items: center; */
-}
-
-.cardTitle {
-  font-weight: 900;
-  font-size: 3rem;
-  color: var(--ifm-color-white);
-}
-
-.cardTitle:hover {
-  color: var(--ifm-color-primary);
-}
-
 .firstProject {
-  background: url(../../static/img/bike_2.webp);
+  background: url(../../static/img/bike_11.webp);
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -67,9 +27,53 @@
 }
 
 .secondProject {
-  background: url(../../static/img/bike_3.webp);
+  background: url(../../static/img/bike_6.webp);
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.thirdProject {
+  background: url(../../static/img/bike_7.webp);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.highlight {
+  font-weight: 600;
+}
+
+.text {
+  font-size: 1.5rem;
+}
+
+.title {
+  /* text-decoration: underline; */
+  border-top: 3px solid var(--ifm-color-gray-400);
+}
+
+.position {
+  font-size: 2rem;
+}
+
+.company {
+  font-size: 1.5rem;
+  color: var(--ifm-color-gray-800);
+  line-height: 60%;
+}
+
+.date {
+  font-size: 1.2rem;
+  color: var(--ifm-color-gray-700);
+}
+
+.listingEnd {
+  border-bottom: 1px solid var(--ifm-color-gray-400);
+}
+
+.articleStatus {
+  color: white;
 }
