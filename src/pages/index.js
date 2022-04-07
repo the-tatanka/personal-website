@@ -8,6 +8,7 @@ import HomepageHeader from "../components/HomepageHeader";
 import Slide from "../components/Slide";
 import ProjectContainer from "../components/ProjectContainer";
 import ProjectCard from "../components/ProjectCard";
+import FadeIn from "../components/FadeIn";
 
 export default function Home() {
   return (
@@ -15,161 +16,169 @@ export default function Home() {
       title="Hello"
       description="Description will go into a meta tag in <head />"
     >
-      <HomepageHeader />
+      <FadeIn delay={10}>
+        <HomepageHeader />
+      </FadeIn>
 
       <main>
-        <Slide>
-          <p className={clsx(styles.highlight, styles.text)}>
-            I'm Sebastian — an ex freelance digital product creator. I'm
-            passionate about software, cycling, and sharing what I know.
-            Currently employed as security expert at Mercedes Benz Tech
-            Innovation based in Ulm, Germany.
-          </p>
+        <FadeIn delay={200}>
+          <Slide>
+            <p className={clsx(styles.highlight, styles.text)}>
+              I'm Sebastian — an ex freelance digital product creator. I'm
+              passionate about software, cycling, and sharing what I know.
+              Currently employed as security expert at Mercedes Benz Tech
+              Innovation based in Ulm, Germany.
+            </p>
 
-          <p className={styles.text}>
-            My writing style is concise - no bla. Given that I am an
-            enthusiastic cyclist, I add bike pictures of my rides.
-          </p>
+            <p className={styles.text}>
+              My writing style is concise - no bla. Given that I am an
+              enthusiastic cyclist, I add bike pictures of my rides.
+            </p>
 
-          <p className={styles.text}>Welcome to my home on the internet!</p>
-        </Slide>
+            <p className={styles.text}>Welcome to my home on the internet!</p>
+          </Slide>
+        </FadeIn>
 
-        <ProjectContainer>
-          <ProjectCard
-            stylesProject={styles.firstProject}
-            projectTitle="Security Toolchain"
-            projectLink="/docs/intro"
-          />
+        <FadeIn delay={200}>
+          <ProjectContainer>
+            <ProjectCard
+              stylesProject={styles.firstProject}
+              projectTitle="Security Toolchain"
+              projectLink="/docs/intro"
+            />
 
-          <ProjectCard
-            stylesProject={styles.secondProject}
-            projectTitle="Interactive Presentations"
-            projectLink="/docs/intro"
-          />
+            <ProjectCard
+              stylesProject={styles.secondProject}
+              projectTitle="Interactive Presentations"
+              projectLink="/docs/intro"
+            />
 
-          <ProjectCard
-            stylesProject={styles.thirdProject}
-            projectTitle="Low Code"
-            projectLink="/docs/intro"
-          />
-        </ProjectContainer>
+            <ProjectCard
+              stylesProject={styles.thirdProject}
+              projectTitle="Low Code"
+              projectLink="/docs/intro"
+            />
+          </ProjectContainer>
+        </FadeIn>
 
-        <Slide>
-          <div className="row">
-            <div className="col col--5">
-              <h1 className={styles.title}>Writing</h1>
+        <FadeIn delay={200}>
+          <Slide>
+            <div className="row">
+              <div className="col col--5">
+                <h1 className={styles.title}>Writing</h1>
+              </div>
+
+              <div className="col col--7">
+                <div className={clsx(styles.listingEnd)}>
+                  <h3 className={styles.position}>Article Title</h3>
+
+                  <p>
+                    <span
+                      className={clsx(
+                        "badge badge--secondary",
+                        styles.articleStatus
+                      )}
+                    >
+                      New
+                    </span>{" "}
+                    July 2021 ·{" "}
+                    <a
+                      className=""
+                      href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Medium article X
+                    </a>
+                  </p>
+                </div>
+
+                <div className={clsx("margin-top--lg", styles.listingEnd)}>
+                  <h3 className={styles.position}>Article Title</h3>
+                  <p>
+                    <span
+                      className={clsx(
+                        "badge badge--secondary",
+                        styles.articleStatus
+                      )}
+                    >
+                      New
+                    </span>{" "}
+                    July 2021 ·{" "}
+                    <a
+                      className=""
+                      href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Medium article X
+                    </a>
+                  </p>
+                </div>
+
+                <div className={clsx("margin-top--lg", styles.listingEnd)}>
+                  <h3 className={styles.position}>Article Title</h3>
+                  <p>
+                    July 2021 ·{" "}
+                    <a
+                      className=""
+                      href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Medium article X
+                    </a>
+                  </p>
+                </div>
+
+                <div className={clsx("margin-top--lg", styles.listingEnd)}>
+                  <h3 className={styles.position}>Article Title</h3>
+                  <p>
+                    July 2021 ·{" "}
+                    <a
+                      className=""
+                      href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Medium article X
+                    </a>
+                  </p>
+                </div>
+
+                <div className={clsx("margin-top--lg", styles.listingEnd)}>
+                  <h3 className={styles.position}>Article Title</h3>
+                  <p>
+                    July 2021 ·{" "}
+                    <a
+                      className=""
+                      href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Medium article X
+                    </a>
+                  </p>
+                </div>
+
+                <div className={clsx("margin-top--lg")}>
+                  <h3 className={styles.position}>Article Title</h3>
+                  <p>
+                    July 2021 ·{" "}
+                    <a
+                      className=""
+                      href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Medium article X
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
-
-            <div className="col col--7">
-              <div className={clsx(styles.listingEnd)}>
-                <h3 className={styles.position}>Article Title</h3>
-
-                <p>
-                  <span
-                    className={clsx(
-                      "badge badge--secondary",
-                      styles.articleStatus
-                    )}
-                  >
-                    New
-                  </span>{" "}
-                  July 2021 ·{" "}
-                  <a
-                    className=""
-                    href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Medium article X
-                  </a>
-                </p>
-              </div>
-
-              <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                <h3 className={styles.position}>Article Title</h3>
-                <p>
-                  <span
-                    className={clsx(
-                      "badge badge--secondary",
-                      styles.articleStatus
-                    )}
-                  >
-                    New
-                  </span>{" "}
-                  July 2021 ·{" "}
-                  <a
-                    className=""
-                    href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Medium article X
-                  </a>
-                </p>
-              </div>
-
-              <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                <h3 className={styles.position}>Article Title</h3>
-                <p>
-                  July 2021 ·{" "}
-                  <a
-                    className=""
-                    href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Medium article X
-                  </a>
-                </p>
-              </div>
-
-              <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                <h3 className={styles.position}>Article Title</h3>
-                <p>
-                  July 2021 ·{" "}
-                  <a
-                    className=""
-                    href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Medium article X
-                  </a>
-                </p>
-              </div>
-
-              <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                <h3 className={styles.position}>Article Title</h3>
-                <p>
-                  July 2021 ·{" "}
-                  <a
-                    className=""
-                    href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Medium article X
-                  </a>
-                </p>
-              </div>
-
-              <div className={clsx("margin-top--lg")}>
-                <h3 className={styles.position}>Article Title</h3>
-                <p>
-                  July 2021 ·{" "}
-                  <a
-                    className=""
-                    href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Medium article X
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </Slide>
+          </Slide>
+        </FadeIn>
 
         {/*
 <Slide>
