@@ -27,13 +27,8 @@ export default function Home() {
           </p>
 
           <p className={styles.text}>
-            ... Also, I want my <i>Google Developer Expert</i> title back. For
-            that, I need to build up reach.
-          </p>
-
-          <p className={styles.text}>
-            My writing style is direct and practical - no bs. Given that I am an
-            enthusiastic cyclist, I post bike pictures of me.
+            My writing style is concise - no bla. Given that I am an
+            enthusiastic cyclist, I add bike pictures of my rides.
           </p>
 
           <p className={styles.text}>Welcome to my home on the internet!</p>
@@ -176,7 +171,8 @@ export default function Home() {
           </div>
         </Slide>
 
-        <Slide>
+        {/*
+<Slide>
           <div className="row">
             <div className="col col--5">
               <h1 className={styles.title}>Experience</h1>
@@ -227,6 +223,7 @@ export default function Home() {
             </div>
           </div>
         </Slide>
+          */}
       </main>
     </Layout>
   );

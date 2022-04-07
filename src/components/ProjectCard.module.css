@@ -1,6 +1,13 @@
 .projectCard {
   block-size: 40vh;
   /* place-items: center; */
+  transition: 0.2s;
+}
+
+.projectCard:hover {
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
 }
 
 .cardTitle {
