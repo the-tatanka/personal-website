@@ -24,7 +24,7 @@
 }
 
 .heroSection::before {
-  animation: bounce 1s ease infinite;
+  animation: bounce 2s ease infinite;
   bottom: 2rem;
   color: #fff;
   content: "╲╱";
