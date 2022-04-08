@@ -4,11 +4,9 @@ import clsx from "clsx";
 // import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 
-import HomepageHeader from "../components/HomepageHeader";
 import Slide from "../components/Slide";
-import ProjectContainer from "../components/ProjectContainer";
-import ProjectCard from "../components/ProjectCard";
 import FadeIn from "../components/FadeIn";
+import ProjectHeader from "../components/ProjectHeader";
 
 export default function Home() {
   return (
@@ -16,226 +14,167 @@ export default function Home() {
       title="Hello"
       description="Description will go into a meta tag in <head />"
     >
-      <HomepageHeader />
+      <div className="home">
+        <ProjectHeader />
 
-      <main>
-        <FadeIn delay={200}>
-          <Slide>
-            <p className={clsx(styles.highlight, styles.text)}>
-              I'm Sebastian — an ex freelance digital product creator. I'm
-              passionate about software, cycling, and sharing what I know.
-              Currently employed as security expert at Mercedes Benz Tech
-              Innovation based in Ulm, Germany.
-            </p>
+        <main>
+          <FadeIn delay={200}>
+            <Slide border={false}>
+              <p className={clsx(styles.highlight, styles.text)}>
+                I'm Sebastian Scherer.
+                {/*
+                — an ex freelance digital product creator. I'm
+                passionate about software, cycling, and sharing what I know.
+                Currently employed as security expert at Mercedes Benz Tech
+                Innovation based in Ulm, Germany.
+                */}
+              </p>
 
-            <p className={styles.text}>
-              My writing style is concise - no bla. Given that I am an
-              enthusiastic cyclist, I add images of my rides.
-            </p>
+              <p className={styles.text}>
+                My writing style is concise - no bla. Given that I am an
+                enthusiastic cyclist, I add images of my rides.
+              </p>
 
-            <p className={styles.text}>Welcome to my home on the internet!</p>
-          </Slide>
-        </FadeIn>
+              <p className={styles.text}>Welcome to my home on the internet!</p>
+            </Slide>
+          </FadeIn>
 
-        <FadeIn delay={300}>
-          <ProjectContainer>
-            <ProjectCard
-              stylesProject={styles.firstProject}
-              projectTitle="Security Toolchain"
-              projectLink="/docs/intro"
-            />
-
-            <ProjectCard
-              stylesProject={styles.secondProject}
-              projectTitle="Interactive Presentations"
-              projectLink="/docs/intro"
-            />
-
-            <ProjectCard
-              stylesProject={styles.thirdProject}
-              projectTitle="Low Code"
-              projectLink="/docs/intro"
-            />
-          </ProjectContainer>
-        </FadeIn>
-
-        <FadeIn delay={400}>
-          <Slide>
-            <div className="row">
-              <div className="col col--5">
-                <h1 className={styles.title}>Blog</h1>
-              </div>
-
-              <div className="col col--7">
-                <div className={clsx(styles.listingEnd)}>
-                  <h3 className={styles.position}>
-                    Why you should have a personal website
-                  </h3>
-
-                  <p>
-                    <span
-                      className={clsx(
-                        "badge badge--secondary",
-                        styles.articleStatus
-                      )}
-                    >
-                      New
-                    </span>{" "}
-                    July 2021 ·{" "}
-                    <a
-                      className=""
-                      href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Medium article X
-                    </a>
-                  </p>
+          <FadeIn delay={400}>
+            <Slide border={true}>
+              <div className="row">
+                <div className="col col--5">
+                  <h1 className={styles.title}>Blog</h1>
                 </div>
 
-                <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                  <h3 className={styles.position}>
-                    Building a personal website with docusaurus
-                  </h3>
-                  <p>
-                    <span
-                      className={clsx(
-                        "badge badge--secondary",
-                        styles.articleStatus
-                      )}
-                    >
-                      New
-                    </span>{" "}
-                    July 2021 ·{" "}
-                    <a
-                      className=""
-                      href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Medium article X
-                    </a>
-                  </p>
-                </div>
+                <div className="col col--7">
+                  <FadeIn delay={500}>
+                    <div className={clsx(styles.listingEnd)}>
+                      <h3 className={styles.articleTitle}>
+                        Why you should have a personal website
+                      </h3>
 
-                <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                  <h3 className={styles.position}>Article Title</h3>
-                  <p>
-                    July 2021 ·{" "}
-                    <a
-                      className=""
-                      href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Medium article X
-                    </a>
-                  </p>
-                </div>
+                      <p>
+                        <span
+                          className={clsx(
+                            "badge badge--secondary",
+                            styles.articleStatus
+                          )}
+                        >
+                          New
+                        </span>{" "}
+                        July 2021 ·{" "}
+                        <a
+                          className=""
+                          href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Medium article X
+                        </a>
+                      </p>
+                    </div>
+                  </FadeIn>
 
-                <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                  <h3 className={styles.position}>Article Title</h3>
-                  <p>
-                    July 2021 ·{" "}
-                    <a
-                      className=""
-                      href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Medium article X
-                    </a>
-                  </p>
-                </div>
+                  <FadeIn delay={550}>
+                    <div className={clsx("margin-top--lg", styles.listingEnd)}>
+                      <h3 className={styles.position}>
+                        Building a personal website with docusaurus
+                      </h3>
+                      <p>
+                        <span
+                          className={clsx(
+                            "badge badge--secondary",
+                            styles.articleStatus
+                          )}
+                        >
+                          New
+                        </span>{" "}
+                        July 2021 ·{" "}
+                        <a
+                          className=""
+                          href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Medium article X
+                        </a>
+                      </p>
+                    </div>
+                  </FadeIn>
 
-                <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                  <h3 className={styles.position}>Article Title</h3>
-                  <p>
-                    July 2021 ·{" "}
-                    <a
-                      className=""
-                      href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Medium article X
-                    </a>
-                  </p>
-                </div>
+                  <FadeIn delay={600}>
+                    <div className={clsx("margin-top--lg", styles.listingEnd)}>
+                      <h3 className={styles.position}>Article Title</h3>
+                      <p>
+                        July 2021 ·{" "}
+                        <a
+                          className=""
+                          href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Medium article X
+                        </a>
+                      </p>
+                    </div>
+                  </FadeIn>
 
-                <div className={clsx("margin-top--lg")}>
-                  <h3 className={styles.position}>Article Title</h3>
-                  <p>
-                    July 2021 ·{" "}
-                    <a
-                      className=""
-                      href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Medium article X
-                    </a>
-                  </p>
+                  <FadeIn delay={650}>
+                    <div className={clsx("margin-top--lg", styles.listingEnd)}>
+                      <h3 className={styles.position}>Article Title</h3>
+                      <p>
+                        July 2021 ·{" "}
+                        <a
+                          className=""
+                          href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Medium article X
+                        </a>
+                      </p>
+                    </div>
+                  </FadeIn>
+
+                  <FadeIn delay={700}>
+                    <div className={clsx("margin-top--lg", styles.listingEnd)}>
+                      <h3 className={styles.position}>Article Title</h3>
+                      <p>
+                        July 2021 ·{" "}
+                        <a
+                          className=""
+                          href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Medium article X
+                        </a>
+                      </p>
+                    </div>
+                  </FadeIn>
+
+                  <FadeIn delay={750}>
+                    <div className={clsx("margin-top--lg")}>
+                      <h3 className={styles.position}>Article Title</h3>
+                      <p>
+                        July 2021 ·{" "}
+                        <a
+                          className=""
+                          href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Medium article X
+                        </a>
+                      </p>
+                    </div>
+                  </FadeIn>
                 </div>
               </div>
-            </div>
-          </Slide>
-        </FadeIn>
-
-        {/*
-<Slide>
-          <div className="row">
-            <div className="col col--5">
-              <h1 className={styles.title}>Experience</h1>
-            </div>
-
-            <div className="col col--7">
-              <div className={clsx(styles.listingEnd)}>
-                <h3 className={styles.position}>Position</h3>
-
-                <h4 className={styles.company}>Company</h4>
-
-                <p className={styles.date}>October 2020 - July 2021</p>
-
-                <ul className={styles.text}>
-                  <li>Coffee</li>
-                  <li>Tea</li>
-                  <li>Milk</li>
-                </ul>
-              </div>
-
-              <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                <h3 className={styles.position}>Position</h3>
-
-                <h4 className={styles.company}>Company</h4>
-
-                <p className={styles.date}>October 2020 - July 2021</p>
-
-                <ul className={styles.text}>
-                  <li>Coffee</li>
-                  <li>Tea</li>
-                  <li>Milk</li>
-                </ul>
-              </div>
-
-              <div className={clsx("margin-top--lg")}>
-                <h3 className={styles.position}>Position</h3>
-
-                <h4 className={styles.company}>Company</h4>
-
-                <p className={styles.date}>October 2020 - July 2021</p>
-
-                <ul className={styles.text}>
-                  <li>Coffee</li>
-                  <li>Tea</li>
-                  <li>Milk</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </Slide>
-          */}
-      </main>
+            </Slide>
+          </FadeIn>
+        </main>
+      </div>
     </Layout>
   );
 }

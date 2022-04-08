@@ -71,7 +71,7 @@ module.exports = {
   projectsSidebar: [
     {
       type: "category",
-      label: "Projects",
+      label: "PROJECTS",
       // highlight-next-line
       items: ["hello"],
     },

@@ -62,7 +62,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Sebastian Scherer",
+        title: "SEBASTIAN SCHERER",
         logo: {
           alt: "Sebastian Scherer Logo",
           src: "img/logo.svg",
@@ -72,12 +72,12 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Projects",
+            label: "PROJECTS",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          { to: "/blog", label: "BLOG", position: "left" },
           {
             href: "https://github.com/the-tatanka",
-            label: "GitHub",
+            label: "GITHUB",
             position: "right",
           },
         ],
@@ -86,19 +86,19 @@ const config = {
         style: "light",
         links: [
           {
-            label: "Projects",
+            label: "PROJECTS",
             to: "/docs/intro",
           },
           {
-            label: "Blog",
+            label: "BLOG",
             to: "/blog",
           },
           {
-            label: "GitHub",
+            label: "GITHUB",
             href: "https://github.com/the-tatanka/github-pages-docusaurus-template",
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Sebastian Scherer`,
+        copyright: `© ${new Date().getFullYear()} SEBASTIAN SCHERER`,
       },
       prism: {
         theme: lightCodeTheme,

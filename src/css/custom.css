@@ -75,6 +75,44 @@
   --ifm-h6-font-size: 0.85rem;
 }
 
+/* Code samples uppercase ruin everything  */
+.home {
+  text-transform: uppercase;
+}
+
+.navbar {
+  text-transform: uppercase;
+}
+
+.footer {
+  text-transform: uppercase;
+}
+
+/* Search bar uppercase from plugin*/
+input {
+  text-transform: uppercase;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  text-transform: uppercase;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  text-transform: uppercase;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  text-transform: uppercase;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  text-transform: uppercase;
+}
+::placeholder {
+  /* Recent browsers */
+  text-transform: uppercase;
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
   --ifm-color-primary: #ea4f14;
