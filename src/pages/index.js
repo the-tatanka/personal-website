@@ -16,9 +16,7 @@ export default function Home() {
       title="Hello"
       description="Description will go into a meta tag in <head />"
     >
-      <FadeIn delay={10}>
-        <HomepageHeader />
-      </FadeIn>
+      <HomepageHeader />
 
       <main>
         <FadeIn delay={200}>
@@ -32,14 +30,14 @@ export default function Home() {
 
             <p className={styles.text}>
               My writing style is concise - no bla. Given that I am an
-              enthusiastic cyclist, I add bike pictures of my rides.
+              enthusiastic cyclist, I add images of my rides.
             </p>
 
             <p className={styles.text}>Welcome to my home on the internet!</p>
           </Slide>
         </FadeIn>
 
-        <FadeIn delay={200}>
+        <FadeIn delay={300}>
           <ProjectContainer>
             <ProjectCard
               stylesProject={styles.firstProject}
@@ -61,16 +59,18 @@ export default function Home() {
           </ProjectContainer>
         </FadeIn>
 
-        <FadeIn delay={200}>
+        <FadeIn delay={400}>
           <Slide>
             <div className="row">
               <div className="col col--5">
-                <h1 className={styles.title}>Writing</h1>
+                <h1 className={styles.title}>Blog</h1>
               </div>
 
               <div className="col col--7">
                 <div className={clsx(styles.listingEnd)}>
-                  <h3 className={styles.position}>Article Title</h3>
+                  <h3 className={styles.position}>
+                    Why you should have a personal website
+                  </h3>
 
                   <p>
                     <span
@@ -94,7 +94,9 @@ export default function Home() {
                 </div>
 
                 <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                  <h3 className={styles.position}>Article Title</h3>
+                  <h3 className={styles.position}>
+                    Building a personal website with docusaurus
+                  </h3>
                   <p>
                     <span
                       className={clsx(

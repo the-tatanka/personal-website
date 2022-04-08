@@ -1,6 +1,6 @@
 ---
-slug: building-a-personal-website
-title: Building a personal website
+slug: building-a-personal-website-with-docusaurus
+title: Building a personal website with docusaurus
 authors: endi
 tags: [hello, docusaurus]
 ---

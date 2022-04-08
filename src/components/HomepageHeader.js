@@ -1,21 +1,18 @@
 import React from "react";
-import clsx from "clsx";
 import styles from "./HomepageHeader.module.css";
+import FadeIn from "./FadeIn";
 
 export default function HomepageHeader() {
   return (
-    <div className={clsx("hero hero--dark", styles.heroBackground)}>
+    <div
+      className={styles.heroSection}
+      onClick={() => window.scrollTo({ top: 800, left: 0, behavior: "smooth" })}
+    >
       <div className="container">
-        <h1
-          className={clsx(
-            "hero__title margin-bottom--md margin-top--xl",
-            styles.heroTitle
-          )}
-        >
-          hi.
-        </h1>
+        <FadeIn delay={50}>
+          <h1 className={styles.heroTitle}>hi.</h1>
 
-        {/*
+          {/*
           <h1 className="hero__title margin-bottom--md margin-top--xl">
             Hi, I'm Sebastian.
           </h1>
@@ -29,6 +26,7 @@ export default function HomepageHeader() {
             </Link>
           </div>
           */}
+        </FadeIn>
       </div>
     </div>
   );

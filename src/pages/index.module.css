@@ -51,8 +51,8 @@
 }
 
 .title {
-  /* text-decoration: underline; */
-  border-top: 3px solid var(--ifm-color-gray-400);
+  text-decoration: underline;
+  /* border-top: 3px solid var(--ifm-color-gray-400); */
 }
 
 .position {
