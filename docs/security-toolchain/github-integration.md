@@ -32,7 +32,7 @@ One way to use git hooks locally in a Node environment is by using a library cal
 
 Put these lines of code into your package.json.
 
-```
+```json
 "husky": {
     "hooks": {
       "pre-commit": "gitleaks detect -v -s ./src/ --no-git -c gitleaks.toml"
@@ -50,20 +50,20 @@ It may happen that the hooks do not work - two solutions:
 
 GitHub provides a default action for uploading artifacts.
 
-```
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build Projects
-        if: github.event_name == 'push'
-        run: npm run build
+```yml
+build:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Build Projects
+      if: github.event_name == 'push'
+      run: npm run build
 
-      - name: Upload Build Folder
-        if: github.event_name == 'push'
-        uses: actions/upload-artifact@v1
-        with:
-          name: build
-          path: build
+    - name: Upload Build Folder
+      if: github.event_name == 'push'
+      uses: actions/upload-artifact@v1
+      with:
+        name: build
+        path: build
 ```
 
 ## Release management
