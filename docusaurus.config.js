@@ -7,14 +7,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Sebastian Scherer",
-  tagline: "Dinosaurs are really cool",
+  tagline: "Welcome to my home on the internet!",
   url: "https://the-tatanka.github.io/",
-  baseUrl: "/github-pages-docusaurus-template/",
+  baseUrl: "/personal_website/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "the-tatanka", // Usually your GitHub org/user name.
-  projectName: "github-pages-docusaurus-template", // Usually your repo name.
+  projectName: "personal_website", // Usually your repo name.
   deploymentBranch: "gh-pages",
 
   presets: [
@@ -27,13 +27,13 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/the-tatanka/github-pages-docusaurus-template/tree/master/",
+            "https://github.com/the-tatanka/personal_website/blob/master/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/the-tatanka/github-pages-docusaurus-template/tree/master/",
+            "https://github.com/the-tatanka/personal_website/blob/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -95,7 +95,7 @@ const config = {
           },
           {
             label: "GITHUB",
-            href: "https://github.com/the-tatanka/github-pages-docusaurus-template",
+            href: "https://github.com/the-tatanka/personal_website/",
           },
         ],
         copyright: `© ${new Date().getFullYear()} SEBASTIAN SCHERER`,
