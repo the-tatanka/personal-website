@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgithub_pages_docusaurus_template=self.webpackChunkgithub_pages_docusaurus_template||[]).push([[4433],{48661:function(e){e.exports=JSON.parse('{"permalink":"/github-pages-docusaurus-template/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
