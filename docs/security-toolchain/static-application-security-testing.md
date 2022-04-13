@@ -25,12 +25,14 @@ Semgrep uses rule sets to search for vulnerabilities.If React code is to be scan
 
 5. Add them to the action under "config:".
 
+## GitHub Action
+
 ```yml
 # For most projects, this workflow file will not need changing; you simply need
 # to commit it to your repository.
 #
 # You may wish to alter this file to override the set of languages analyzed,
-# or to provide custom queries or build logic.
+# or to provide custom queries or build logic at "config".
 #
 # Without user customization, Semgrep refers to the following to define ignored files and folders:
 # https://semgrep.dev/docs/ignoring-files-folders-code/#understanding-semgrep-defaults
