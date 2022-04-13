@@ -77,7 +77,7 @@ export default function Home() {
 
                   <FadeIn delay={550}>
                     <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                      <h3 className={styles.position}>
+                      <h3 className={styles.articleTitle}>
                         Building a personal website with docusaurus
                       </h3>
                       <p>
@@ -102,6 +102,7 @@ export default function Home() {
                     </div>
                   </FadeIn>
 
+                  {/*
                   <FadeIn delay={600}>
                     <div className={clsx("margin-top--lg", styles.listingEnd)}>
                       <h3 className={styles.position}>Article Title</h3>
@@ -169,6 +170,7 @@ export default function Home() {
                       </p>
                     </div>
                   </FadeIn>
+                  */}
                 </div>
               </div>
             </Slide>
