@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# Static Application Security Testing (SAST)
+# Static Application Security Testing
 
-<b>Semgrep</b> is a fast, open-source, static analysis tool for finding bugs and enforcing code standards.
+<b>Semgrep</b> is a fast, open-source, SAST tool for finding bugs and enforcing code standards.
 Semgrep uses rule sets to search for vulnerabilities.If React code is to be scanned, the React ruleset can be selected.
 
 - Template Github actions config: https://semgrep.dev/docs/semgrep-ci/sample-ci-configs/#github-actions
