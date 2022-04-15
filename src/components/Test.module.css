@@ -1,0 +1,15 @@
+.eachSlide {
+  /*
+  height: 100vh;
+  width: 100vw; 
+  */
+  background-color: green;
+}
+
+.firstProject {
+  background: url(../../static/img/bike_27.webp);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
