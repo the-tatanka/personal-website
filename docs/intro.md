@@ -1,5 +1,11 @@
 ---
 sidebar_position: 1
+id: intro
+title: Intro
+description: Docusaurus uses GitHub Flavored Markdown (GFM). Find out more about Docusaurus-specific features when writing Markdown.
+keywords:
+  - docs
+  - docusaurus
 ---
 
 # Intro
@@ -110,3 +116,13 @@ This action is dangerous
 ## Images
 
 ![Docusaurus logo](/img/bike_1.jpg)
+
+## MdX - use js / React
+
+import Slide from "@site/src/components/presentation/Slide";
+import Header from "@site/src/components/presentation/Header";
+
+<Slide>
+<Header>Lorem Ipsum</Header>
+
+</Slide>

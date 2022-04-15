@@ -4,14 +4,16 @@ import clsx from "clsx";
 // import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 
-import Slide from "../components/Slide";
+import Section from "../components/Section";
 import FadeIn from "../components/FadeIn";
 import ProjectHeader from "../components/ProjectHeader";
+
+import { Presentation } from "../components/Test";
 
 export default function Home() {
   return (
     <Layout
-      title="Hello"
+      title="Home"
       description="Description will go into a meta tag in <head />"
     >
       <div className="home">
@@ -19,7 +21,7 @@ export default function Home() {
 
         <main>
           <FadeIn delay={200}>
-            <Slide border={false}>
+            <Section border={false}>
               <p className={clsx(styles.highlight, styles.text)}>
                 I'm Sebastian Scherer.
                 {/*
@@ -36,11 +38,11 @@ export default function Home() {
               </p>
 
               <p className={styles.text}>Welcome to my home on the internet!</p>
-            </Slide>
+            </Section>
           </FadeIn>
 
           <FadeIn delay={400}>
-            <Slide border={true}>
+            <Section border={true}>
               <div className="row">
                 <div className="col col--5">
                   <h1 className={styles.title}>Blog</h1>
@@ -173,7 +175,7 @@ export default function Home() {
                   */}
                 </div>
               </div>
-            </Slide>
+            </Section>
           </FadeIn>
         </main>
       </div>
