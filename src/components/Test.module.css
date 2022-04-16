@@ -1,9 +1,16 @@
 .eachSlide {
-  /*
+  background-color: white;
+  position: relative;
+}
+
+.fullScreenOn {
   height: 100vh;
-  width: 100vw; 
-  */
-  background-color: green;
+  width: 100vw;
+}
+
+.fullScreenOff {
+  width: 100%;
+  height: 75%;
 }
 
 .firstProject {

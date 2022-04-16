@@ -48,54 +48,92 @@ const Test = () => {
               top: "0",
               left: "0",
             }
-          : {}
+          : {
+              width: "100%",
+              height: "75%",
+              border: "1px solid var(--ifm-color-emphasis-300)",
+            }
       }
     >
       <Slide {...properties}>
-        <div className={clsx("padding--xl", styles.eachSlide)}>
-          <div className="row">
-            <div className="col col--6">
+        <div
+          className={clsx(
+            styles.eachSlide,
+            fullScreen ? styles.fullScreenOn : styles.fullScreenOff
+          )}
+        >
+          <div className="row" style={{ height: "100%" }}>
+            <div
+              className={clsx(
+                "col col--6",
+                fullScreen ? "padding--xl" : "padding--lg"
+              )}
+            >
               <h1>Test Slide 1</h1>
 
-              <ul>
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
-              </ul>
+              <h2>
+                <ul>
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Milk</li>
+                </ul>
+              </h2>
             </div>
 
             <div className={clsx("col col--6", styles.firstProject)}></div>
           </div>
-        </div>
-
-        <div className={styles.eachSlide}>
-          <h1>Test Slide 2</h1>
-
-          <ol>
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-          </ol>
 
           <button
-            className="button button--primary"
+            className="button button--secondary"
+            style={{
+              position: "absolute",
+              bottom: "20px",
+              right: "30px",
+            }}
             onClick={() => setFullScreen(!fullScreen)}
           >
-            Secondary
+            {fullScreen ? "X" : "Open"}
           </button>
         </div>
 
-        <div className={styles.eachSlide}>
-          <h1>Test Slide 3</h1>
+        <div
+          className={clsx(
+            styles.eachSlide,
+            fullScreen ? styles.fullScreenOn : styles.fullScreenOff
+          )}
+        >
+          <div className="row" style={{ height: "100%" }}>
+            <div
+              className={clsx(
+                "col col--6",
+                fullScreen ? "padding--xl" : "padding--lg"
+              )}
+            >
+              <h1>Test Slide 2</h1>
 
-          <ul>
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-          </ul>
+              <h2>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+              </h2>
+
+              <h2>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h2>
+            </div>
+
+            <div className={clsx("col col--6", styles.firstProject)}></div>
+          </div>
+
+          <button
+            className="button button--secondary"
+            style={{
+              position: "absolute",
+              bottom: "20px",
+              right: "30px",
+            }}
+            onClick={() => setFullScreen(!fullScreen)}
+          >
+            {fullScreen ? "X" : "Open"}
+          </button>
         </div>
       </Slide>
     </div>
