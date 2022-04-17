@@ -6,9 +6,29 @@ sidebar_position: 2
 
 Basic understanding of GitHub and GitHub Actions is necessary.
 
+## Workflow strategy
+
+TODO How to run and include dynamic test results?
+
+```mermaid
+graph TD
+    A[Feature] -->|Pull request| B{Pull request <br /> -status checks?}
+
+    B -->|&#9745 <br /> Merge| C[Staging]
+    B -->|&#9746 <br /> Make changes| A
+
+    C --> F[Deploy to staging]
+
+    C -->|Pulll request| D{Pull request <br /> -status checks?}
+    D -->|&#9745 <br /> Merge| E[Main]
+    D -->|&#9746 <br /> Make changes| C
+
+    E -->|Create a release| G[Deploy to production]
+```
+
 ## Branch protection rules
 
-The main / master branch must be blocked. You are only allowed to commit to them if all security <i>status checks</i> of the actions are successful.
+The main / master branch must be blocked. You are only allowed to commit to them if all security <b>status checks</b> of the actions are successful.
 
 ![Branch protection rules](./branch_protection_rules.webp)
 

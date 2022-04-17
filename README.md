@@ -6,6 +6,8 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 @docusaurus/preset-classic uses [Infima](https://infima.dev/) as the underlying styling framework.
 
+[HTML symbols](https://www.w3schools.com/charsets/ref_utf_arrows.asp).
+
 ### Installation
 
 ```

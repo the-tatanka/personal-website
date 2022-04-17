@@ -33,7 +33,7 @@ export default function Home() {
               </p>
 
               <p className={styles.text}>
-                My writing style is concise - no bla. Given that I am an
+                My writing style is concise - no bs. Given that I am an
                 enthusiastic cyclist, I add images of my rides.
               </p>
 
@@ -92,6 +92,33 @@ export default function Home() {
                           New
                         </span>{" "}
                         July 2021 ·{" "}
+                        <a
+                          className=""
+                          href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Medium article X
+                        </a>
+                      </p>
+                    </div>
+                  </FadeIn>
+
+                  <FadeIn delay={600}>
+                    <div className={clsx("margin-top--lg", styles.listingEnd)}>
+                      <h3 className={styles.articleTitle}>
+                        Tech Stacks - simple is better
+                      </h3>
+                      <p>
+                        <span
+                          className={clsx(
+                            "badge badge--secondary",
+                            styles.articleStatus
+                          )}
+                        >
+                          New
+                        </span>{" "}
+                        July 2022 ·{" "}
                         <a
                           className=""
                           href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
