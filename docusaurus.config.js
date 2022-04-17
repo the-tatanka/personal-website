@@ -23,7 +23,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          remarkPlugins: [require("mdx-mermaid")],
+          remarkPlugins: [
+            [require("mdx-mermaid"), { mermaid: { theme: "neutral" } }],
+          ],
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:

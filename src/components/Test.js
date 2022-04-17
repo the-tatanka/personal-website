@@ -50,8 +50,8 @@ const Test = () => {
             }
           : {
               width: "100%",
-              height: "75%",
-              border: "1px solid var(--ifm-color-emphasis-300)",
+              // height: "75%",
+              // border: "1px solid var(--ifm-color-emphasis-300)",
             }
       }
     >
@@ -84,12 +84,13 @@ const Test = () => {
           </div>
 
           <button
-            className="button button--secondary"
-            style={{
-              position: "absolute",
-              bottom: "20px",
-              right: "30px",
-            }}
+            className={clsx(
+              "button",
+              styles.fullScreenButton,
+              fullScreen
+                ? styles.fullScreenButtonClose
+                : styles.fullScreenButtonOpen
+            )}
             onClick={() => setFullScreen(!fullScreen)}
           >
             {fullScreen ? "X" : "Open"}
@@ -124,12 +125,13 @@ const Test = () => {
           </div>
 
           <button
-            className="button button--secondary"
-            style={{
-              position: "absolute",
-              bottom: "20px",
-              right: "30px",
-            }}
+            className={clsx(
+              "button",
+              styles.fullScreenButton,
+              fullScreen
+                ? styles.fullScreenButtonClose
+                : styles.fullScreenButtonOpen
+            )}
             onClick={() => setFullScreen(!fullScreen)}
           >
             {fullScreen ? "X" : "Open"}
