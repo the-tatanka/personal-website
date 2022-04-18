@@ -8,8 +8,6 @@ import Section from "../components/Section";
 import FadeIn from "../components/FadeIn";
 import ProjectHeader from "../components/ProjectHeader";
 
-import { Presentation } from "../components/Test";
-
 export default function Home() {
   return (
     <Layout

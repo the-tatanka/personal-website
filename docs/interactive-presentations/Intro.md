@@ -15,9 +15,3 @@ sidebar_position: 1
 Interactive and collaborative presentations are key.
 
 - https://www.mural.co/templates/collaborative-presentation
-
-## Example
-
-import Test from "@site/src/components/Test";
-
-<Test />

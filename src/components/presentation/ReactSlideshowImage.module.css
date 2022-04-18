@@ -17,8 +17,8 @@
   color: var(--ifm-color-black);
   /* background-color: transparent; */
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  top: 100px;
+  right: 100px;
   border: none;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .firstProject {
-  background: url(../../static/img/bike_27.webp);
+  background: url(../../../static/img/bike_27.webp);
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;

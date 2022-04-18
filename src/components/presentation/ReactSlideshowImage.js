@@ -4,7 +4,7 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
 import clsx from "clsx";
-import styles from "./Test.module.css";
+import styles from "./ReactSlideshowImage.module.css";
 
 const properties = {
   duration: 5000,
@@ -18,7 +18,7 @@ const properties = {
   },
 };
 
-const Test = () => {
+const ReactSlideshowImage = () => {
   const [fullScreen, setFullScreen] = useState(false);
 
   /*
@@ -38,6 +38,7 @@ const Test = () => {
 
   return (
     <div
+      className="padding--lg"
       style={
         fullScreen
           ? {
@@ -50,8 +51,8 @@ const Test = () => {
             }
           : {
               width: "100%",
-              // height: "75%",
-              // border: "1px solid var(--ifm-color-emphasis-300)",
+              height: "75%",
+              border: "1px solid var(--ifm-color-emphasis-300)",
             }
       }
     >
@@ -62,7 +63,7 @@ const Test = () => {
             fullScreen ? styles.fullScreenOn : styles.fullScreenOff
           )}
         >
-          <div className="row" style={{ height: "100%" }}>
+          <div className="row" style={{ height: "100%", width: "100%" }}>
             <div
               className={clsx(
                 "col col--6",
@@ -142,4 +143,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default ReactSlideshowImage;
