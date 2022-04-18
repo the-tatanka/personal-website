@@ -28,7 +28,7 @@ All of the listed training materials are free, can also be useful for other secu
 
 ## OWASP resources walkthrough
 
-[The Open Web Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of software. Through community-led open-source software projects, hundreds of local chapters worldwide, tens of thousands of members, and leading educational and training conferences, the OWASP Foundation is the source for developers and technologists to secure the web.](https://owasp.org/)
+[The Open Web Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of software.](https://owasp.org/)
 
 OWASP is the number one source for web application security.
 
