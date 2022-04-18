@@ -6,27 +6,21 @@ sidebar_position: 2
 
 Basic understanding of GitHub and GitHub Actions is necessary.
 
-## Workflow strategy
-
-TODO How to run and include dynamic test results?
+## Workflow Strategy
 
 ```mermaid
 graph TD
     A[Feature] -->|Pull request| B{Pull request <br /> -status checks?}
 
-    B -->|&#9745 <br /> Merge| C[Staging]
+    B -->|&#9745 <br /> Merge pull request / push| C[Staging <br /> -deploy to staging env]
     B -->|&#9746 <br /> Make changes| A
 
-    C --> F[Deploy to staging]
-
     C -->|Pulll request| D{Pull request <br /> -status checks?}
-    D -->|&#9745 <br /> Merge| E[Main]
+    D -->|&#9745 <br /> Merge pull request / push| E[Main <br /> -create a release <br /> -deploy to prod env]
     D -->|&#9746 <br /> Make changes| C
-
-    E -->|Create a release| G[Deploy to production]
 ```
 
-## Branch protection rules
+## Branch Protection Rules
 
 The main / master branch must be blocked. You are only allowed to commit to them if all security <b>status checks</b> of the actions are successful.
 
@@ -66,7 +60,7 @@ It may happen that the hooks do not work - two solutions:
 
 - Remove the git hooks folder, uninstall husky and install it again
 
-## Upload build artifacts
+## Upload Build Artifacts
 
 GitHub provides a default action for uploading artifacts.
 
@@ -86,7 +80,7 @@ build:
         path: build
 ```
 
-## Release management
+## Release Management
 
 You can create a GitHub release to package software, along with release notes and links to workflow artifacts.
 
