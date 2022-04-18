@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Security Assessment
@@ -10,7 +10,7 @@ The security assessment describes a detailed <b>detailed</b> threat modeling pro
 
 Having a good diagram is key to a good threat model.
 
-The first step is to draw a whiteboard diagram of the flow of data in your component. It's the DATA flow you care about, NOT the code flow. Your threats come via data, NOT code.
+The first step is to draw a diagram of the flow of data in your component. It's the DATA flow you care about, NOT the code flow. Your threats come via data, NOT code.
 
 Use the following elements:
 

@@ -12,6 +12,8 @@ sidebar_position: 1
 >
 > — [Sarah Gershman](https://hbr.org/2020/11/yes-virtual-presenting-is-weird)
 
-Interactive and collaborative presentations are key.
+<b>Interactive and collaborative presentations are key.</b>
+
+Feedback from the audience must be gathered directly. The feedback can be provided through presentation tools or verbal requests.
 
 - https://www.mural.co/templates/collaborative-presentation

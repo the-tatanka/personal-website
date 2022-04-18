@@ -8,6 +8,8 @@ You threat model to identify threats to your component, which then lets you know
 
 It doesn't solve the problem. The threats and risks are not solved until they are eliminated.
 
+The section [Security Assessment](./security-assessment.md) explains how to perform threat modeling.
+
 ## Training materials
 
 All of the listed training materials are free, can also be useful for other security areas than threat modeling.
