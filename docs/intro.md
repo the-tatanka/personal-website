@@ -119,6 +119,7 @@ This action is dangerous
 
 ## MdX - use js / React
 
+```
 import Slide from "@site/src/components/presentation/Slide";
 import Header from "@site/src/components/presentation/Header";
 
@@ -126,3 +127,4 @@ import Header from "@site/src/components/presentation/Header";
 <Header>Lorem Ipsum</Header>
 
 </Slide>
+```

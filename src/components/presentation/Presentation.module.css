@@ -4,10 +4,6 @@
   cursor: pointer;
 }
 
-.my-slide {
-  text-align: left;
-}
-
 .image {
   background: url(../../../static/img/bike_27.webp);
   /* Center and scale the image nicely */
@@ -18,7 +14,7 @@
 
 .presentation-mode {
   border: 0;
-  /* margin: 10px auto; */
+  margin: 10px auto;
   padding: 0;
   display: inline-block;
   width: 100%;
@@ -29,16 +25,16 @@
   left: 0;
 }
 
-.presentation-mode .my-slide {
+.presentation-mode .slide {
   /*
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  line-height: 1.5;
-  font-size: 1.5em;
-  color: black;
-  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.5em;
+    color: black;
+    */
 
   text-align: left;
   height: 100vh;
