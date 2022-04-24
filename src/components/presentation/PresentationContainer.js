@@ -29,7 +29,9 @@ const PresentationContainer = ({ children }) => {
           : {}
       }
     >
-      <Carousel showArrows>{children}</Carousel>
+      <Carousel showArrows useKeyboardArrows emulateTouch swipeable>
+        {children}
+      </Carousel>
     </div>
   );
 };
