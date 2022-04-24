@@ -23,15 +23,33 @@ export default function Slide({ children }) {
 
       <div
         className="row"
-        style={{ height: "10%", textTransform: "uppercase" }}
+        style={{
+          height: "10%",
+          textTransform: "uppercase",
+          position: "relative",
+        }}
       >
-        <div className="col col--6" style={{ textAlign: "left" }}>
+        <div
+          className="col col--6"
+          style={{
+            textAlign: "left",
+            bottom: "0",
+            left: "0",
+            position: "absolute",
+          }}
+        >
           Sebastian Scherer
         </div>
 
         <div
           className="col col--6"
-          style={{ textAlign: "right", cursor: "pointer" }}
+          style={{
+            textAlign: "right",
+            cursor: "pointer",
+            bottom: "0",
+            right: "0",
+            position: "absolute",
+          }}
           onClick={() => setPresentation(!presentation)}
         >
           {presentation ? <FullscreenExit /> : <Fullscreen />}
