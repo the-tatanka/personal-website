@@ -18,6 +18,56 @@ import Bike1 from '@site/static/img/bike_1.webp';
 
 <Slide>
 <Column width="12">
+
+# Lorem ipsum dolor sit amet, consetetur
+
+At vero eos et accusam et justo duo dolores et ea rebum.
+
+> A greater than…
+
+Some `backticks` for inline.
+
+```js
+backtick.fences("for blocks");
+```
+
+</Column>
+</Slide>
+
+<Slide>
+<Column width="12">
+
+# Image without scale
+
+![Docusaurus logo](/img/bike_1.jpg)
+
+</Column>
+</Slide>
+
+<Slide>
+<Column width="12">
+
+# Image with scale
+
+<img src={Bike1} alt="Bike image" style={{width: "700px", height: "500px"}} />
+
+</Column>
+</Slide>
+
+<Slide>
+<Column width="12">
+
+# Lists
+
+- asterisks for unordered items
+
+1. decimals and a dot for ordered items
+
+</Column>
+</Slide>
+
+<Slide>
+<Column width="12">
 <Title>Lorem ipsum dolor sit amet, consetetur</Title>
 <Paragraph>At vero eos et accusam et justo duo dolores et ea rebum. </Paragraph>
 </Column>
