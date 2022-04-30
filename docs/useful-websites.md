@@ -12,7 +12,7 @@ keywords:
 
 Work more efficiently with the following websites / tools.
 
-## Free images / videos / SVGs
+## Free Images / Videos / SVGs
 
 - [Unsplash images](https://unsplash.com/)
 
@@ -24,7 +24,7 @@ Work more efficiently with the following websites / tools.
 
 - [Reverse Image Search (find visually similar photos)](https://www.labnol.org/reverse/)
 
-## Free icons / fonts
+## Free Icons / Fonts
 
 - [Google fonts](https://fonts.google.com/)
 
@@ -38,7 +38,7 @@ Work more efficiently with the following websites / tools.
 
 - [three.js (general purpose 3D library)](https://github.com/mrdoob/three.js/)
 
-## Design ideas
+## Design Ideas
 
 - [HTML5 site templates (responsive, free)](https://html5up.net/)
 
@@ -105,6 +105,8 @@ Work more efficiently with the following websites / tools.
 - [Autodraw ("whiteboard", transform freehand doodles into drawings)](https://www.autodraw.com/)
 
 - [InVideo (online video editor)](https://invideo.io/)
+
+- [W3Schools (world's largest web developer site)](https://www.w3schools.com/)
 
 ## Free Hosting
 
