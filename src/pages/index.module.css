@@ -30,20 +30,3 @@
   /* text-decoration: underline; */
   border-top: 3px solid var(--ifm-color-gray-400);
 }
-
-.articleTitle {
-  font-size: 2rem;
-}
-
-.date {
-  font-size: 1.2rem;
-  color: var(--ifm-color-gray-700);
-}
-
-.listingEnd {
-  border-bottom: 1px solid var(--ifm-color-gray-400);
-}
-
-.articleStatus {
-  color: white;
-}

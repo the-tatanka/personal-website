@@ -6,7 +6,14 @@ import styles from "./index.module.css";
 
 import Section from "../components/Section";
 import FadeIn from "../components/FadeIn";
-import ProjectHeader from "../components/ProjectHeader";
+
+import Blog from "../components/Blog";
+
+import Project from "../components/Project";
+import Bike27 from "@site/static/img/bike_27.webp";
+import Bike6 from "@site/static/img/bike_6.webp";
+import Bike7 from "@site/static/img/bike_7.webp";
+import Bike11 from "@site/static/img/bike_11.webp";
 
 export default function Home() {
   return (
@@ -15,7 +22,61 @@ export default function Home() {
       description="Description will go into a meta tag in <head />"
     >
       <div className="home">
-        <ProjectHeader />
+        <div className="container-fluid">
+          <div className="row row--no-gutters">
+            <Project
+              title="Security Toolchain"
+              link="/docs/security-toolchain/intro"
+              style={{
+                background: `url(${Bike27})`,
+                /* Center and scale the image nicely */
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+              width="col col--8"
+            />
+
+            <Project
+              title="Low Code"
+              link="/docs/low-code/intro"
+              style={{
+                background: `url(${Bike6})`,
+                /* Center and scale the image nicely */
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+              width="col col--4"
+            />
+
+            <Project
+              title="Threat Modeling"
+              link="/docs/threat-modeling/intro"
+              style={{
+                background: `url(${Bike7})`,
+                /* Center and scale the image nicely */
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+              width="col col--6"
+            />
+
+            <Project
+              title="Interactive Presentations"
+              link="/docs/interactive-presentations/intro"
+              style={{
+                background: `url(${Bike11})`,
+                /* Center and scale the image nicely */
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+              width="col col--6"
+            />
+          </div>
+        </div>
 
         <main>
           <FadeIn delay={200}>
@@ -48,156 +109,34 @@ export default function Home() {
 
                 <div className="col col--7">
                   <FadeIn delay={500}>
-                    <div className={clsx(styles.listingEnd)}>
-                      <h3 className={styles.articleTitle}>
-                        Why you should have a personal website
-                      </h3>
-
-                      <p>
-                        <span
-                          className={clsx(
-                            "badge badge--secondary",
-                            styles.articleStatus
-                          )}
-                        >
-                          New
-                        </span>{" "}
-                        July 2021 ·{" "}
-                        <a
-                          className=""
-                          href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Medium article X
-                        </a>
-                      </p>
-                    </div>
+                    <Blog
+                      title="Why you should have a personal website"
+                      tags={["New"]}
+                      date="July 2022"
+                      url="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                      platform="Medium"
+                    />
                   </FadeIn>
 
                   <FadeIn delay={550}>
-                    <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                      <h3 className={styles.articleTitle}>
-                        Building a personal website with docusaurus
-                      </h3>
-                      <p>
-                        <span
-                          className={clsx(
-                            "badge badge--secondary",
-                            styles.articleStatus
-                          )}
-                        >
-                          New
-                        </span>{" "}
-                        July 2021 ·{" "}
-                        <a
-                          className=""
-                          href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Medium article X
-                        </a>
-                      </p>
-                    </div>
+                    <Blog
+                      title="Building a personal website with docusaurus"
+                      tags={["New"]}
+                      date="June 2022"
+                      url="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                      platform="Medium"
+                    />
                   </FadeIn>
 
                   <FadeIn delay={600}>
-                    <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                      <h3 className={styles.articleTitle}>
-                        Tech Stacks - simple is better
-                      </h3>
-                      <p>
-                        <span
-                          className={clsx(
-                            "badge badge--secondary",
-                            styles.articleStatus
-                          )}
-                        >
-                          New
-                        </span>{" "}
-                        July 2022 ·{" "}
-                        <a
-                          className=""
-                          href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Medium article X
-                        </a>
-                      </p>
-                    </div>
+                    <Blog
+                      title="Tech Stacks - simple is better"
+                      tags={["New"]}
+                      date="July 2022"
+                      url="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
+                      platform="Medium"
+                    />
                   </FadeIn>
-
-                  {/*
-                  <FadeIn delay={600}>
-                    <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                      <h3 className={styles.position}>Article Title</h3>
-                      <p>
-                        July 2021 ·{" "}
-                        <a
-                          className=""
-                          href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Medium article X
-                        </a>
-                      </p>
-                    </div>
-                  </FadeIn>
-
-                  <FadeIn delay={650}>
-                    <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                      <h3 className={styles.position}>Article Title</h3>
-                      <p>
-                        July 2021 ·{" "}
-                        <a
-                          className=""
-                          href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Medium article X
-                        </a>
-                      </p>
-                    </div>
-                  </FadeIn>
-
-                  <FadeIn delay={700}>
-                    <div className={clsx("margin-top--lg", styles.listingEnd)}>
-                      <h3 className={styles.position}>Article Title</h3>
-                      <p>
-                        July 2021 ·{" "}
-                        <a
-                          className=""
-                          href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Medium article X
-                        </a>
-                      </p>
-                    </div>
-                  </FadeIn>
-
-                  <FadeIn delay={750}>
-                    <div className={clsx("margin-top--lg")}>
-                      <h3 className={styles.position}>Article Title</h3>
-                      <p>
-                        July 2021 ·{" "}
-                        <a
-                          className=""
-                          href="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Medium article X
-                        </a>
-                      </p>
-                    </div>
-                  </FadeIn>
-                  */}
                 </div>
               </div>
             </Section>

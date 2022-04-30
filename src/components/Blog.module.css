@@ -1,0 +1,12 @@
+.blog {
+  border-bottom: 1px solid var(--ifm-color-gray-400);
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.tag {
+  color: white;
+}
