@@ -16,15 +16,19 @@ Never forget ...
 
 A common approach to problem solving can enhance a group’s ability to make decisions together.
 
+The image below shows a modified version of the Z-Model from Myers-Briggs Type Indicator.
+
 ![Modified Z-Model](/img/z-model.png)
 
-Keep in mind:
+The original approach suggests the following methodology:
 
-- What can we clarify/implement ourselves?
+> We start use Sensing (1) to identify the facts, raw data, VOCs, KPIs. But we know that this is not enough and we need to examine the data voice, place it in the context of prior experiences, and exploring either current and new ways of viewing the problem, by using Intuition (2).
+>
+> Now we use a Thinking (3) judgment to analyze the consequences of the various options we have generated. Finally, we apply our Feeling (4) judgment to consider the effects of each option, and incorporate the values of people involved.
+>
+> — [Daniel Sani Simões](https://www.linkedin.com/pulse/z-model-problem-solving-main-factor-its-complete-daniel-sani-sim%C3%B5es)
 
-- Where do we need support?
-
-- What do we have to live with?
+The following questions can help to formulate the individual steps.
 
 ### 1. Problem
 
