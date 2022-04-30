@@ -97,7 +97,7 @@ const config = {
           },
           {
             label: "GITHUB",
-            href: "https://github.com/the-tatanka/personal-website/",
+            href: "https://github.com/the-tatanka",
           },
         ],
         copyright: `© ${new Date().getFullYear()} SEBASTIAN SCHERER`,

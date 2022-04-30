@@ -11,7 +11,7 @@ export default function Blog({
   platform = "Life",
 }) {
   return (
-    <div className={clsx(styles.blog)}>
+    <div className={clsx("margin-bottom--md", styles.blog)}>
       <h3 className={styles.title}>{title}</h3>
 
       <p>
