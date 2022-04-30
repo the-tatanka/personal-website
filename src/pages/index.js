@@ -92,7 +92,7 @@ export default function Home() {
               </p>
 
               <p className={styles.text}>
-                My writing style is concise - no bs. Given that I am an
+                My writing style is concise - no blah. Given that I am an
                 enthusiastic cyclist, I add images of my rides.
               </p>
 
