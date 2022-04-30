@@ -4,8 +4,6 @@ sidebar_position: 2
 
 # Solving Problems
 
-# Solving problems
-
 Never forget ...
 
 > A clever person solves a problem. A wise person avoids it.
