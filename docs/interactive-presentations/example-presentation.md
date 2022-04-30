@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+# Example Presentation
+
 import Presentation from "@site/src/components/presentation/Presentation";
 import PresentationContainer from "@site/src/components/presentation/PresentationContainer";
 import Slide from "@site/src/components/presentation/Slide";
