@@ -10,7 +10,7 @@ Checklists can be used to ensure consistency among both internal testing teams a
 
 These checklists offer tips for planning, issuing and reviewing Request for Information (RFI) documents for information security assessments.
 
-The [following web application checklist](https://zeltser.com/security-architecture-cheat-sheet/) contains questions about the initial design and review of a complex internet application's security architecture. Shown is the [checklist of Lenny Zeltser](https://zeltser.com/security-architecture-cheat-sheet/).
+The [following web application checklist](https://zeltser.com/security-architecture-cheat-sheet/) contains questions about the initial design and review of a complex internet application's security architecture. Shown is the [checklist from Lenny Zeltser](https://zeltser.com/security-architecture-cheat-sheet/).
 
 Depending on the web application / service, questions can be added or removed.
 

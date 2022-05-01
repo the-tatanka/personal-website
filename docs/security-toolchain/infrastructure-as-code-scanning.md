@@ -16,7 +16,7 @@ Before choosing one of the tools, it should be noted that all of the listed ones
 
 - KICS Github action: https://github.com/Checkmarx/kics-github-action
 
-## Integration
+## Integration - KICS
 
 1. Enable code scanning in your repository.
 
@@ -93,4 +93,65 @@ jobs:
       with:
         sarif_file: kicsResults/results.sarif
       if: always()
+```
+
+## Integration - Trivy
+
+1. Enable code scanning in your repository.
+
+2. Create a new workflow named "trivy.yml" in your ".github/workflows" directory.
+
+3. Paste the example Trivy action below.
+
+## GitHub Action
+
+```yml
+# Depending on the location of your Docker container
+# you need to change the path to the specific Docker registry.
+#
+name: "Trivy"
+
+on:
+  push:
+    branches: [main, master]
+  # pull_request:
+  # The branches below must be a subset of the branches above
+  # branches: [ main, master ]
+  # paths-ignore:
+  #   - "**/*.md"
+  #   - "**/*.txt"
+  schedule:
+    # Once a day
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  # Trigger manually
+
+jobs:
+  analyze-config:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run Trivy vulnerability scanner in config mode
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: "config"
+          # ignore-unfixed: true
+          exit-code: "1"
+          hide-progress: false
+          format: "sarif"
+          output: "trivy-results.sarif"
+          severity: "CRITICAL,HIGH"
+
+      - name: Upload Trivy scan results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v1
+        if: always()
+        with:
+          sarif_file: "trivy-results.sarif"
 ```
