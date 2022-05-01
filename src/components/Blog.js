@@ -12,6 +12,9 @@ export default function Blog({
 }) {
   return (
     <div className={clsx("margin-bottom--md", styles.blog)}>
+      {
+        // TODO add Link to blog
+      }
       <h3 className={styles.title}>{title}</h3>
 
       <p>

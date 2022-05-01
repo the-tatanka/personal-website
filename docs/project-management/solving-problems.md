@@ -42,11 +42,11 @@ The following questions can help to formulate the individual steps.
 
 ### 2. Goal
 
+There are several methods for setting business goals - I recommend [SMART OKRs](metrics).
+
 - What is the goal?
 
 - What must be the outcome?
-
-- How will we objectively assess progress and success?
 
 ### 3. Solution Options
 
