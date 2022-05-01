@@ -26,7 +26,7 @@ Before choosing one of the tools, it should be noted that all of the listed ones
 
 4. KICS must be shown the paths to IaC files to be scanned. Add them to the action under "path:".
 
-## GitHub Action
+### GitHub Action
 
 ```yml
 # For most projects, this workflow file will not need changing; you simply need
@@ -103,7 +103,7 @@ jobs:
 
 3. Paste the example Trivy action below.
 
-## GitHub Action
+### GitHub Action
 
 ```yml
 # Depending on the location of your Docker container
