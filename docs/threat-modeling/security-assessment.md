@@ -57,64 +57,6 @@ For each element type, the following threats are considered valid:
 | Data Flows        |     | X   |     | X   | X   |     |
 | Data              |     | X   |     | X   | X   |     |
 
-There are common threats per STRIDE category. The following list is not complete and is only meant to be a help.
-
-### Spoofing / Authentication
-
-Broken authentication is an umbrella term for several vulnerabilities that attackers exploit to impersonate legitimate users. Broadly, broken authentication refers to weaknesses in two areas: session management and credential management.
-
-For example, here are some common authentication methods and what would be required to spoof:
-
-- Single key: Anyone who obtains the key would have access to the systems that trust it indefinitely.
-
-- Access token: Anyone with an access token would have access before needing additional credentials to generate another token.
-
-- Signatures: To spoof a signature, the attacker would need access to the sender's private key.
-
-- Session ID: Attackers use stolen session IDs to impersonate identities.
-
-The following types of attacks are considered authentication attacks:
-
-- Brute Force: Allows an attacker to guess a person's user name, password, credit card number, or cryptographic key by using an automated process of trial and error. Weak of password policies simplify the attack.
-
-- Insufficient Authentication: Allows an attacker to access a web site containing sensitive content or functions without having to properly authenticate with the web site - vulnerable authentication logic. Using a vulnerable authentication library. Missing rate limiters and lockout process. Insecure two-factor authentication. Uses plain text, encrypted, or weakly hashed passwords.
-
-- Weak Password Recovery Validation: Allows an attacker to access a web site that provides them with the ability to illegally obtain, change, or recover another user's password.
-
-- Insecure session handling: Authentication states are kept in a stateful session. Vulnerable session management allows a malicious user to ride on a valid authenticated session without the need for authentication. Improper user logout functionality, lack of session timeouts, insecure practices of storing session data in non httponly cookies, web pages, or browser storage are common attacks.
-
-- Violation of the principle of least privilege: Access should only be granted for particular capabilities, roles, or users, but is available to anyone.
-
-### Tampering / Integrity
-
-When you retrieve data from a system, you should feel confident that it’s correct.
-
-The following data is often tampered with:
-
-- Access tokens: May be altered to spoof access.
-
-- Updates / packages / plugins: Install malicious code.
-
-- Logs: Overwrite log files that would show malicious activity.
-
-- Business critical data: Billing addresses, ...
-
-Common attacks are:
-
-- Insufficient signature validation: An attacker can modify the contents at will, insert all kind of payloads (XSS, SQLi), ignore the expiration time by using an arbitrary value for the timestamp, and so on. Updates / packages / dependencies are downloaded and applied without sufficient signature verification.
-
-- Injection: Cross-site Scripting and SQL Injection.
-
-- Insecure Deserialization: Objects or data are encoded or serialized into a structure that an attacker can see and modify is vulnerable to insecure deserialization.
-
-### Repudiation / Non-repudiation
-
-### Information Disclosure / Confidentiality
-
-### Denial of Service / Availability
-
-### Elevation of Privilege / Authorization
-
 ## STRIDE-per-element
 
 We call this process of considering the element-specific threats to each element in the DFD "STRIDE-per-Element".
