@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Let me paint a picture of the not-so-cool problem.
 
-Developers generally create sites — using multiple layers, prototypes, and files to show different pages, hover states, and screen sizes. Then, after repeated discussion between stakeholders (and awaiting approval), they are getting passed off to an <i>unrelated</i> developer.
+Designers generally create sites — using multiple layers, prototypes, and files to show different pages, hover states, and screen sizes. Then, after repeated discussion between stakeholders (and awaiting approval), they are getting passed off to an <i>unrelated</i> developer.
 
 Back-and-forth is required when they ask for clarification on your requirements / details, when they ultimately point out technical limitations, and simply when they deviate from the design as prescribed. Depending on the extent of the changes, the client might have to get involved again, leading to a sometimes annoying push-and-pull.
 
