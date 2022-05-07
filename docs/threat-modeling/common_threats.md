@@ -6,6 +6,8 @@ sidebar_position: 6
 
 There are common threats per STRIDE category. The following list is <b>not complete and is only meant to be a help</b>.
 
+Almost all threats are from [Threagile](https://github.com/Threagile/threagile).
+
 ### Spoofing / Authentication
 
 Broken authentication is an umbrella term for several vulnerabilities that attackers exploit to impersonate legitimate users. Broadly, broken authentication refers to weaknesses in two areas: session management and credential management.
