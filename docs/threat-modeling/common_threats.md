@@ -128,12 +128,6 @@ Common attacks are:
 
   - Mitigation: Apply hardening of all cloud components and services, taking special care to follow the individual risk descriptions.
 
-- Missing Hardening: Technical assets with a Relative Attacker Attractiveness (RAA) value of " + strconv.Itoa(raaLimit) + " % or higher should be explicitly hardened taking best practices and vendor hardening guides into account.
-
-  - Impact: If this risk remains unmitigated, attackers might be able to easier attack high-value targets.
-
-  - Mitigation: Try to apply all hardening best practices (like CIS benchmarks, OWASP recommendations, vendor recommendations, DevSec Hardening Framework, DBSAT for Oracle databases, and others).
-
 - Missing Web Application Firewall (WAF): To have a first line of filtering defense, security architectures with web-services or web-applications should include a WAF in front of them. Even though a WAF is not a replacement for security (all components must be secure even without a WAF) it adds another layer of defense to the overall system by delaying some attacks and having easier attack alerting through it.
 
   - Impact: If this risk is unmitigated, attackers might be able to apply standard attack pattern tests at great speed without any filtering.
@@ -172,9 +166,27 @@ Common attacks are:
 
 ### Repudiation / Non-repudiation
 
+Repudiation threats take aim at your auditing and tracing, ensuring that bad behavior cannot be proven.
+
+If this attack takes place, the data stored on log files can be considered invalid or misleading.
+
 - Insufficient Auditing: Does the log capture enough data to understand what happened in the past? Do your logs capture enough data to understand an incident after the fact? Is such capture lightweight enough to be left on all the time? Do you have enough data to deal with repudiation claims? Make sure you log sufficient and appropriate data to handle a repudiation claims.
 
+  - Impact:
+
+  - Mitigation:
+
 - External Entity potentially denies receiving data: An entity claims that it did not receive data from a process on the other side of the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
+
+  - Impact:
+
+  - Mitigation:
+
+- Weak access control to the database: When there is weak access control to the database, the stored data are no longer deniable. This can occur when there is a threat of information disclosure at the data store.
+
+  - Impact:
+
+  - Mitigation:
 
 ### Information Disclosure / Confidentiality
 
@@ -238,7 +250,7 @@ Common information disclosure threats against confidentiality are:
 
   - Impact: If this risk is unmitigated, attackers might be able to read sensitive files (configuration data, key/credential files, deployment files, business data files, etc.) form the filesystem of affected components and/or access sensitive services or files of other components.
 
-- Mitigation: Apply hardening of all XML parser instances in order to stay safe from XML External Entity (XXE) vulnerabilities. When a third-party product is used instead of custom developed software, check if the product applies the proper mitigation and ensure a reasonable patch-level.
+  - Mitigation: Apply hardening of all XML parser instances in order to stay safe from XML External Entity (XXE) vulnerabilities. When a third-party product is used instead of custom developed software, check if the product applies the proper mitigation and ensure a reasonable patch-level.
 
 ### Denial of Service / Availability
 
@@ -246,9 +258,21 @@ Common information disclosure threats against confidentiality are:
 
 - Data Store Inaccessible: An external agent prevents access to a data store on the other side of the trust boundary.
 
+  - Impact:
+
+  - Mitigation:
+
 - Data Flow Is Potentially Interrupted: An external agent interrupts data flowing across a trust boundary in either direction.
 
+  - Impact:
+
+  - Mitigation:
+
 - Potential Process Crash or Stop: Process crashes, halts, stops or runs slowly; in all cases violating an availability metric.
+
+  - Impact:
+
+  - Mitigation:
 
 - DoS-risky Access Across Trust-Boundary: Assets accessed across trust boundaries with critical or mission-critical availability rating are more prone to Denial-of-Service (DoS) risks.
 
@@ -314,9 +338,9 @@ Common information disclosure threats against confidentiality are:
 
 - Unguarded Access From Internet: Internet-exposed assets must be guarded by a protecting service, application, or reverse-proxy.
 
-- Impact: If this risk is unmitigated, attackers might be able to directly attack sensitive systems without any hardening components in-between due to them being directly exposed on the internet.
+  - Impact: If this risk is unmitigated, attackers might be able to directly attack sensitive systems without any hardening components in-between due to them being directly exposed on the internet.
 
-- Mitigation: Encapsulate the asset behind a guarding service, application, or reverse-proxy. For admin maintenance a bastion-host should be used as a jump-server. For file transfer a store-and-forward-host should be used as an indirect file exchange platform.
+  - Mitigation: Encapsulate the asset behind a guarding service, application, or reverse-proxy. For admin maintenance a bastion-host should be used as a jump-server. For file transfer a store-and-forward-host should be used as an indirect file exchange platform.
 
 - Unguarded Direct Datastore Access: Datastores accessed across trust boundaries must be guarded by some protecting service or application.
 
