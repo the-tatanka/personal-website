@@ -14,7 +14,9 @@ The following options are free:
 
 - GitHub: With Mermaid.js support, a diagram can be created in markdown. Create DFD with Mermaid.js and note the threats in markdown.
 
-- Almost any wiki platform: Draw DFD with a Draw.io integration.
+- Almost any wiki platform / tool: Draw DFD with a Draw.io integration.
+
+- [Threagile](https://github.com/Threagile/threagile): Create a DFD through a YAML config. Tool also generates an initial list of matching threats. You can add your own threats. Very cool tool!
 
 - OWASP Threat Dragon: DFD can be drawn through joint.js. Drawing the trust boundaries is a bit buggy. Supports STRIDE.
 
