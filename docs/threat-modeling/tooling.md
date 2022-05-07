@@ -21,3 +21,13 @@ The following options are free:
 - OWASP Threat Dragon: DFD can be drawn through joint.js. Drawing the trust boundaries is a bit buggy. Supports STRIDE.
 
 - Microsoft Threat Modeling Tool: DFD can be drawn. Supports STRIDE. Is a desktop app :(.
+
+Another option is to create your own threat modeling tool. It's not rocket science! Also the DFD creation is the biggest challenge here. If you are comfortable with having the DFD generated, this is not a problem either. Can be done for example by Mermaid.js.
+
+With the help of a low code platform such a tool can be created within a day!
+
+:::danger Take care
+
+Because threat models contain mostly confidential data, it is important to pay attention to where the data is stored.
+
+:::
