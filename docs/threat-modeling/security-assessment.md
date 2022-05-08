@@ -97,7 +97,6 @@ Risk impact generally does not change quickly over time unless services and prod
 
 | Level   | Description                                                                                                                |
 | ------- | -------------------------------------------------------------------------------------------------------------------------- |
-| None    | There is no technical impact to the software being analyzed at all. In other words, this does not lead to a vulnerability. |
 | Low     | Minimal control over the software being analyzed, or only access to relatively unimportant information can be obtained.    |
 | Medium  | Moderate control over the software being analyzed, or access to moderately important information can be obtained.          |
 | High    | Significant control over the software being analyzed, or access to critical information can be obtained.                   |
@@ -109,7 +108,6 @@ The likelihood that a vulnerability in the service will be exploited in a calend
 
 | Level   | Description                                                                                                                                                                            |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| None    | Due to the absence of security controls, an attacker has no chance of success; i.e., the issue is a "bug" because there is no attacker role, and no benefit to the attacker.           |
 | Low     | Due to the absence of security controls, an attacker probably would not target this weakness, or could have very limited chances of success.                                           |
 | Medium  | Due to the absence of security controls, an attacker would probably target this weakness successfully, but the chances of success might vary, or require multiple attempts to succeed. |
 | High    | Due to the absence of security controls, it is highly likely that an attacker would target this weakness successfully, with a reliable exploit that is easy to develop.                |
@@ -128,13 +126,12 @@ The risk levels also represent a simplified ISO 31000 equivalent (and are non-co
 | Medium  | <ul><li>Attention: Attention from all concerned parties.</li><li>Impact: Low, medium or high impact.</li><li>Effort: Best effort. Following standard/guidelines is required.</li><li>Risk acceptance: Risk should be discussed, and at least mitigated.</li><li>Exception time (SLA): Recommend remediation within 90 days.</li></ul>                                                                                                                                             |
 | Low     | <ul><li>Attention: Expected but not required.</li><li>Impact: Low or medium impact.</li><li>Effort: Best effort and best practices expected.</li><li>Risk acceptance: Risk may often be accepted as residual risk.</li><li>Exception time (SLA): Indefinitely.</li></ul>                                                                                                                                                                                                          |
 
-| Likelihood /(x) / Impact (y) | None | Low    | Medium | High    | Maximum |
-| ---------------------------- | ---- | ------ | ------ | ------- | ------- |
-| None                         | Low  | Low    | Low    | Low     | Low     |
-| Low                          | Low  | Low    | Low    | Low     | Medium  |
-| Medium                       | Low  | Low    | Medium | Medium  | High    |
-| High                         | Low  | Medium | High   | High    | Maximum |
-| Maximum                      | Low  | Medium | High   | Maximum | Maximum |
+| Likelihood (x) \ Impact (y)  | Low    | Medium | High    | Maximum |
+| ---------------------------- | ------ | ------ | ------- | ------- |
+| Low                          | Low    | Low    | Medium  | Medium  |
+| Medium                       | Low    | Medium | High    | High    |
+| High                         | Medium | High   | High    | Maximum |
+| Maximum                      | Medium | High   | Maximum | Maximum |
 
 ## Risk Treatment
 
