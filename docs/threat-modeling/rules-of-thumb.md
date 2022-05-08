@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Rules of thumb
+# Rules of Thumb
 
 While it can be easy to find threats, it is important to realize that all threats have real-world consequences for the development team.
 

@@ -24,7 +24,7 @@ Use the following elements:
 
 - Trust Boundary: Occurs when one component doesn't trust the component on the other side of the boundary. There is always a trust boundary between elements running at different privilege levels.
 
-- <i>Data: Could be a file, a registry key or personal data. This element does not appear in the classic data flow diagram. However, I find it helpful to explicitly model certain security relevant data.</i>
+- <i>Data: Could be a file, a registry key or personal data. This element is not part of the classic data flow diagram. However, I find it helpful to explicitly note security relevant data.</i>
 
   - Data Stores store data
   - Processes process data.
@@ -95,12 +95,12 @@ Assessing impact is a relatively finite, quantitative exercise:
 
 Risk impact generally does not change quickly over time unless services and products are redesigned, large features are added, new types of data is processed, etc.
 
-| Level   | Description                                                                                                                |
-| ------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Low     | Minimal control over the software being analyzed, or only access to relatively unimportant information can be obtained.    |
-| Medium  | Moderate control over the software being analyzed, or access to moderately important information can be obtained.          |
-| High    | Significant control over the software being analyzed, or access to critical information can be obtained.                   |
-| Maximum | Complete control over the software being analyzed, to the point where operations cannot take place.                        |
+| Level   | Description                                                                                                             |
+| ------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Low     | Minimal control over the software being analyzed, or only access to relatively unimportant information can be obtained. |
+| Medium  | Moderate control over the software being analyzed, or access to moderately important information can be obtained.       |
+| High    | Significant control over the software being analyzed, or access to critical information can be obtained.                |
+| Maximum | Complete control over the software being analyzed, to the point where operations cannot take place.                     |
 
 ## Likelihood
 
@@ -126,12 +126,12 @@ The risk levels also represent a simplified ISO 31000 equivalent (and are non-co
 | Medium  | <ul><li>Attention: Attention from all concerned parties.</li><li>Impact: Low, medium or high impact.</li><li>Effort: Best effort. Following standard/guidelines is required.</li><li>Risk acceptance: Risk should be discussed, and at least mitigated.</li><li>Exception time (SLA): Recommend remediation within 90 days.</li></ul>                                                                                                                                             |
 | Low     | <ul><li>Attention: Expected but not required.</li><li>Impact: Low or medium impact.</li><li>Effort: Best effort and best practices expected.</li><li>Risk acceptance: Risk may often be accepted as residual risk.</li><li>Exception time (SLA): Indefinitely.</li></ul>                                                                                                                                                                                                          |
 
-| Likelihood (x) \ Impact (y)  | Low    | Medium | High    | Maximum |
-| ---------------------------- | ------ | ------ | ------- | ------- |
-| Low                          | Low    | Low    | Medium  | Medium  |
-| Medium                       | Low    | Medium | High    | High    |
-| High                         | Medium | High   | High    | Maximum |
-| Maximum                      | Medium | High   | Maximum | Maximum |
+| Likelihood (x) \ Impact (y) | Low    | Medium | High    | Maximum |
+| --------------------------- | ------ | ------ | ------- | ------- |
+| Low                         | Low    | Low    | Medium  | Medium  |
+| Medium                      | Low    | Medium | High    | High    |
+| High                        | Medium | High   | High    | Maximum |
+| Maximum                     | Medium | High   | Maximum | Maximum |
 
 ## Risk Treatment
 
