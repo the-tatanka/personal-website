@@ -126,10 +126,10 @@ The risk levels also represent a simplified ISO 31000 equivalent (and are non-co
 | Medium  | <ul><li>Attention: Attention from all concerned parties.</li><li>Impact: Low, medium or high impact.</li><li>Effort: Best effort. Following standard/guidelines is required.</li><li>Risk acceptance: Risk should be discussed, and at least mitigated.</li><li>Exception time (SLA): Recommend remediation within 90 days.</li></ul>                                                                                                                                             |
 | Low     | <ul><li>Attention: Expected but not required.</li><li>Impact: Low or medium impact.</li><li>Effort: Best effort and best practices expected.</li><li>Risk acceptance: Risk may often be accepted as residual risk.</li><li>Exception time (SLA): Indefinitely.</li></ul>                                                                                                                                                                                                          |
 
-| Likelihood (x) \ Impact (y) | Low    | Medium | High    | Maximum |
+| Likelihood (x) \ Impact (y)  | Low    | Medium | High    | Maximum |
 | ---------------------------- | ------ | ------ | ------- | ------- |
-| Low                          | Low    | Low    | Medium| Medium  |
-| Medium                       | Low    | Medium | Medium  | High    |
+| Low                          | Low    | Low    | Medium  | Medium  |
+| Medium                       | Low    | Medium | High    | High    |
 | High                         | Medium | High   | High    | Maximum |
 | Maximum                      | Medium | High   | Maximum | Maximum |
 
