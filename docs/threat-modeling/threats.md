@@ -1,8 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 ---
 
-# Common Threats
+# Threats
 
 There are common threats per STRIDE category. The following list is <b>not complete and is only meant to be a help</b>.
 

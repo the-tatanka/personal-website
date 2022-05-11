@@ -6,7 +6,7 @@ sidebar_position: 2
 
 While it can be easy to find threats, it is important to realize that all threats have real-world consequences for the development team.
 
-Concentrate your efforts on those where the attacker can cause real damage.
+**Concentrate your efforts on those where the attacker can cause real damage.**
 
 To help you guide your thinking about what kinds of threats deserve mitigation, here are some rules of thumb that you can use while performing your threat modeling from [Microsoft](https://docs.microsoft.com/en-us/archive/blogs/larryosterman/threat-modeling-again-threat-modeling-rules-of-thumb):
 
