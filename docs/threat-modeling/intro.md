@@ -14,7 +14,9 @@ The section [Security Assessment](./security-assessment.md) explains how to perf
 
 All of the listed training materials are free, can also be useful for other security areas than threat modeling.
 
-- [Microsoft - Threat Modeling Security Fundamentals](https://docs.microsoft.com/en-us/learn/paths/tm-threat-modeling-fundamentals/)
+- Microsoft - [Threat Modeling Security Fundamentals](https://docs.microsoft.com/en-us/learn/paths/tm-threat-modeling-fundamentals/)
+
+- [Threat Modeling Manifesto](https://www.threatmodelingmanifesto.org/)
 
 - Security [SANS glossary-of-terms](https://www.sans.org/security-resources/glossary-of-terms/)
 
