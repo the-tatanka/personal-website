@@ -238,6 +238,34 @@ The role of the facilitator is to plan and lead activities and instruction in or
 
 Facilitation does not mean taking charge and dictating the outcome, but rather allowing each participant to contribute fully and equally and enabling a shared, collaborative outcome that the group buys into. Facilitators must come from a neutral place.
 
+### Facilitation Goals
+
+Our goals as facilitators are:
+
+1. Full and equal participation: Creating opportunities and platforms for contributors to generate their own ideas, speak up about their thoughts, and openly discuss their perspectives - diverge-and-converge technique
+
+2. Mutual understanding: Make sure that everyone is on the same page
+
+3. Inclusive and collaborative decision making: Output of a workshop is only useful if everyone buys into it
+
+4. Shared responsibility: Help the workshop group to identify who will be responsible for what upon leaving the workshop, in a way that is fair and actionable. Have a clear idea of the next steps for each workshop participant.
+
+### Facilitation Principles
+
+There are 6 principles that always stand true:
+
+- Always be listening: If needed, guide them towards a better expression that others in the workshop can understand and build on.
+
+- Create an inviting space: _Does anyone else have something to add?_, _Did you have an idea?_, or _You look like you may have something to add._
+
+- Welcome improvisation: !
+
+- Be authentic to you and your knowledge: The best style is whatever is most authentic to who you are. Be honest with what you know. Your job as a facilitator is to be an expert in the process, not in the content.
+
+- Avoid giving advice: Think of a facilitator as a referee in a sports match. If you give advice with statements like _I would_ or _if I were you,_ then the workshop output and decision making will become yours, rather than the group’s.
+
+- Embrace constructive conflict: It is necessary to establish transparency, trust, and ultimately buy-in. A workshop is the ideal place to move through conflict, because here you have tools that can productively break down disagreement. As a facilitator, it is better to work through conflict rather than avoid it.
+
 ## Resources
 
 - https://www.nngroup.com/articles/ux-workshop-agendas/
@@ -245,3 +273,5 @@ Facilitation does not mean taking charge and dictating the outcome, but rather a
 - https://www.nngroup.com/articles/workshops-vs-meetings/
 
 - https://www.nngroup.com/articles/diverge-converge/
+
+- https://www.nngroup.com/articles/workshop-facilitation-101/
