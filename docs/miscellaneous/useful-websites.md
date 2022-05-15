@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 2
 id: useful-websites
 title: Useful Websites
 description: Useful websites for developers.
