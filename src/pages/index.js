@@ -64,8 +64,8 @@ export default function Home() {
             />
 
             <Project
-              title="Interactive Presentations"
-              link="/docs/miscellaneous/presentations"
+              title="Remote Presentations"
+              link="/docs/miscellaneous/remote-presentations"
               style={{
                 background: `url(${Bike11})`,
                 /* Center and scale the image nicely */

@@ -238,6 +238,14 @@ The role of the facilitator is to plan and lead activities and instruction in or
 
 Facilitation does not mean taking charge and dictating the outcome, but rather allowing each participant to contribute fully and equally and enabling a shared, collaborative outcome that the group buys into. Facilitators must come from a neutral place.
 
+:::info Remember
+
+If you are brought in as an expert to set up a strategy in your field of expertise, you have to take a position on that strategy.
+
+If something falls out of your field of expertise, you have to shut up.
+
+:::
+
 ### Facilitation Goals
 
 Our goals as facilitators are:
@@ -265,6 +273,50 @@ There are 6 principles that always stand true:
 - Avoid giving advice: Think of a facilitator as a referee in a sports match. If you give advice with statements like _I would_ or _if I were you,_ then the workshop output and decision making will become yours, rather than the group’s.
 
 - Embrace constructive conflict: It is necessary to establish transparency, trust, and ultimately buy-in. A workshop is the ideal place to move through conflict, because here you have tools that can productively break down disagreement. As a facilitator, it is better to work through conflict rather than avoid it.
+
+### Facilitation Toolkit
+
+Have a toolbox of methods and tricks that you can use during workshop in improvisational or planned ways.
+
+The toolkit is the same when the workshop takes place remotely.
+
+Materials:
+
+- Sticky notes
+
+- Sharpies
+
+- Whiteboard
+
+- Voting dots
+
+- Index cards
+
+Activities:
+
+- Post up
+
+- Affinity diagramming
+
+- Landscape mapping
+
+- Forced ranking
+
+- Storyboarding
+
+- Role playing
+
+- Playback
+
+- ... there are thousands more
+
+Techniques:
+
+- Intentional silence: To prompt a participant to speak up in order to fill the void
+
+- Balancing: Asking other participants for contrary opinions or ideas
+
+- Linking: Bringing tangential or unrelated participant comments back to the topic at hand
 
 ## Resources
 
