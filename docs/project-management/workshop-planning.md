@@ -282,7 +282,7 @@ Have a toolbox of methods and tricks that you can use during workshop in improvi
 
 The toolkit is the same when the workshop takes place remotely.
 
-Materials:
+#### Materials
 
 - Sticky notes
 
@@ -294,7 +294,7 @@ Materials:
 
 - Index cards
 
-Activities:
+#### Activities
 
 - Post up
 
@@ -302,7 +302,7 @@ Activities:
 
 - Landscape mapping
 
-- Forced ranking
+- Forced ranking: Dot-Voting, [Impact–effort matrix, MoSCoW analysis](https://www.nngroup.com/articles/prioritization-methods)
 
 - Storyboarding
 
@@ -312,7 +312,9 @@ Activities:
 
 - ... there are thousands more
 
-Techniques:
+More info on when and how the activities are conducted at [NN/g](https://www.nngroup.com/articles/workshop-activities/).
+
+#### Techniques
 
 - Intentional silence: To prompt a participant to speak up in order to fill the void
 
@@ -353,3 +355,5 @@ My choice is Google Draw.
 - https://www.nngroup.com/articles/tools-remote-ux-workshops/
 
 - https://www.nngroup.com/articles/5-ux-workshops/
+
+- https://www.nngroup.com/articles/workshop-activities/
