@@ -200,6 +200,8 @@ To develop a shared understanding that prevents people from calling for workshop
 
 - Critique workshops: Roles integral to the design process collaborate to analyze and improve a design so that it meets its objectives
 
+NN/g describes the workshops in more detail and goes into more detail about [when to use which in the course of the project](https://www.nngroup.com/articles/5-ux-workshops/).
+
 ### Structure
 
 Often, meetings are more passive than workshops — attendees spend most of the time speaking or listening — while workshops encourage active participation in activities such as sketching, brainstorming, or artifact creation to organize and capture group progress.
@@ -318,6 +320,26 @@ Techniques:
 
 - Linking: Bringing tangential or unrelated participant comments back to the topic at hand
 
+## Tools for Remote Workshops
+
+Features to look for:
+
+- Low complexity
+
+- Visually organize large quantities of “flat” information
+
+- Easy to modify, reposition, and edit
+
+- Voting capabilities:
+
+  - Ensure voting is not only possible, but democratic
+
+  - Depending on the subject matter, you may want anonymity
+
+- Visualize resulting priorities (e.g., matrix format or list of scores)
+
+My choice is Google Draw.
+
 ## Resources
 
 - https://www.nngroup.com/articles/ux-workshop-agendas/
@@ -327,3 +349,7 @@ Techniques:
 - https://www.nngroup.com/articles/diverge-converge/
 
 - https://www.nngroup.com/articles/workshop-facilitation-101/
+
+- https://www.nngroup.com/articles/tools-remote-ux-workshops/
+
+- https://www.nngroup.com/articles/5-ux-workshops/
