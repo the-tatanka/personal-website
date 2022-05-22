@@ -80,7 +80,7 @@ Most resources (time, budget, logistics) are spent on customer-facing outputs, w
 
 - Forming relationships
 
-### Customer Journey Mapping
+## Customer Journey Mapping
 
 Focus on a specific customer’s interaction with a product or service.
 
@@ -88,15 +88,81 @@ A visualization of the process that a person goes through in order to accomplish
 
 In its most basic form, journey mapping starts by compiling a series of user goals and actions into a timeline skeleton. Next, the skeleton is fleshed out with user thoughts and emotions in order to create a narrative.
 
-There is one map per persona/user type (1:1 mapping).
+There is one map per persona / user type (1:1 mapping). It is a must to create a customer persona.
 
 ### Benefits of Customer Journey Mapping
+
+- Shift a company’s perspective from inside-out to outside-in
 
 - Pinpointing of specific customer journey touchpoints that cause pain or delight
 
 - Break down silos to create one shared, organization-wide understanding of the customer journey
 
 - Assign ownership of key touchpoints in the journey to internal departments
+
+- Target specific customers
+
+- Understand quantitative data
+
+### Key Elements of a Customer Journey Map
+
+![customer_journey_map_template.png](assets/customer_journey_map_template.png)
+
+- **Zone A**: The lens provides constraints for the map
+
+  - (1) Persona / actor (_who_) as point of view.
+
+  - (2) Scenario (_what_) an existing journey, where mapping will uncover positive and negative moments, or a _to-be_ experience for a product or service that doesn’t exist yet. Clarify the user’s goal during this experience.
+
+- **Zone B**: The heart of the map is the visualized experience
+
+  - (3) Chunkable phases of the journey.
+
+  - (4) Actions are the behaviors and steps taken by users. Add _touchpoints_ here. A touchpoint represents a specific interaction between a customer and an organization. It includes the device being used, the channel used for the interaction, and the specific task being completed.
+
+  - (5) Thoughts correspond to users’ questions, motivations, and information needs.
+
+  - (6) Emotions signaling the emotional _ups_ and _downs_ of the experience.
+
+- **Zone C**: The output should vary based on the business goal the map supports, but it could describe the insights and pain points discovered
+
+  - (7) Opportunities to focus on going forward.
+
+  - (8) Internal ownership.
+
+### 5 Steps of Successful Customer Journey Mapping
+
+Customer journey mapping follows five key high-level steps:
+
+1. Aspiration and allies:
+
+- Define the scope and goal
+
+- Educate and engage stakeholders
+
+2. Internal investigation:
+
+- Gather existing research (Market-research surveys, Brand audits, Call-center or customer-support logs, Site surveys or VOC (voice of customer) feedback, Outputs from client advisory board (CAB) meetings)
+
+- Perform internal stakeholder interviews (Sales-team members, Marketing-team members, Management Support-team members (e.g., technical-support representatives), R&D team members or product owners)
+
+3. Assumption formulation:
+
+- Synthesize internal insights
+
+- Create a draft framework / hypothesis map
+
+4. External research:
+
+- Use the draft framework to shape external research
+
+- Perform qualitive, primary research (Customer interviews, Direct observation, Contextual inquiry, Diary studies)
+
+5. Narrative visualization:
+
+- Collectively map out a visual narrative that shares the story of your research
+
+- Use it to drive change
 
 ## Service Blueprinting
 
@@ -195,3 +261,7 @@ Secondary elements are:
 - https://www.nngroup.com/articles/service-blueprints-definition/
 
 - https://www.nngroup.com/articles/service-blueprinting-workshops/
+
+- https://www.nngroup.com/articles/customer-journey-mapping-process/
+
+- https://www.nngroup.com/articles/customer-journey-mapping/
