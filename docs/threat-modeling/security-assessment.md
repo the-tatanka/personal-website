@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Security Assessment
 
-The security assessment describes a detailed <b>detailed</b> threat modeling process - based on STRIDE.
+The security assessment describes a **detailed** threat modeling process - based on STRIDE.
 
 ## Writing a good Data Flow Diagram
 
@@ -24,24 +24,26 @@ Use the following elements:
 
 - Trust Boundary: Occurs when one component doesn't trust the component on the other side of the boundary. There is always a trust boundary between elements running at different privilege levels.
 
-- <i>Data: Could be a file, a registry key or personal data. This element is not part of the classic data flow diagram. However, I find it helpful to explicitly note security relevant data.</i>
+- _Data: Could be a file, a registry key or personal data. This element is not part of the classic data flow diagram. However, I find it helpful to explicitly note security relevant data._
 
   - Data Stores store data
-  - Processes process data.
-  - Data Flows send Data.
+
+  - Processes process data
+
+  - Data Flows send Data
 
 ## STRIDE
 
-STRIDE stands for "Spoofing", "Tampering", "Repudiation", "Information disclosure", "Denial of service", and "Elevation of privilege".
+STRIDE stands for:
 
-| Threat                 | Property        | Definition                                               |
-| ---------------------- | --------------- | -------------------------------------------------------- |
-| Spoofing               | Authentication  | Impersonating something or someone else                  |
-| Tampering              | Integrity       | Modifying data or code                                   |
-| Repudiation            | Non-repudiation | Claiming to have not performed an action                 |
-| Information Disclosure | Confidentiality | Exposing information to someone not authorized to see it |
-| Denial of Service      | Availability    | Deny or degrade service to users                         |
-| Elevation of Privilege | Authorization   | Gain capabilities without proper authorization           |
+| Threat                     | Property        | Definition                                               |
+| -------------------------- | --------------- | -------------------------------------------------------- |
+| **S**poofing               | Authentication  | Impersonating something or someone else                  |
+| **T**ampering              | Integrity       | Modifying data or code                                   |
+| **R**epudiation            | Non-repudiation | Claiming to have not performed an action                 |
+| **I**nformation Disclosure | Confidentiality | Exposing information to someone not authorized to see it |
+| **D**enial of Service      | Availability    | Deny or degrade service to users                         |
+| **E**levation of Privilege | Authorization   | Gain capabilities without proper authorization           |
 
 Essentially the idea is that you can classify all your threats according to one of the 6 STRIDE categories. But STRIDE is not a rigorous classification mechanism - there's a ton of overlap between the various categories (a successful Elevation of Privilege attack could result in Tampering of data, for instance). But it doesn't change the fact that it's an extremely useful mechanism for analyzing threats to a system.
 
@@ -53,7 +55,7 @@ For each element type, the following threats are considered valid:
 | ----------------- | --- | --- | --- | --- | --- | --- |
 | External Entities | X   |     | X   |     |     |     |
 | Processes         | X   | X   | X   | X   | X   | X   |
-| Data Stores       |     | X   | X   | X   | X   |     |
+| Data Stores       |     | X   | ?   | X   | X   |     |
 | Data Flows        |     | X   |     | X   | X   |     |
 | Data              |     | X   |     | X   | X   |     |
 
@@ -67,13 +69,39 @@ The STRIDE-per-element methodology ends up creating a fair number of threats, ev
 
 This analysis is the core of the threat model, and where the real work associated with the process takes place.
 
+### Rules of Thumb
+
+While it can be easy to find threats, it is important to realize that all threats have real-world consequences for the development team.
+
+**Concentrate your efforts on those where the attacker can cause real damage.**
+
+To help you guide your thinking about what kinds of threats deserve mitigation, here are some rules of thumb that you can use while performing your threat modeling from [Microsoft](https://docs.microsoft.com/en-us/archive/blogs/larryosterman/threat-modeling-again-threat-modeling-rules-of-thumb):
+
+- If the data hasn’t crossed a trust boundary, you don’t really care about it.
+
+- If the threat requires that the attacker is ALREADY running code on the client at your privilege level, you don’t really care about it.
+
+- If your code runs with any elevated privileges (even if your code runs in a restricted instance) you need to be concerned.
+
+- If your code invalidates assumptions made by other entities, you need to be concerned.
+
+- If your code listens on the network, you need to be concerned.
+
+- If your code retrieves information from the internet, you need to be concerned.
+
+- If your code deals with data that came from a file, you need to be concerned (these last two are the inverses of rule #1).
+
+- If your code is marked as safe for scripting or safe for initialization, you need to be REALLY concerned.
+
+For more information on the rules, see [Microsofts rules of thumb](https://docs.microsoft.com/en-us/archive/blogs/larryosterman/threat-modeling-again-threat-modeling-rules-of-thumb).
+
 ## Risk Analysis
 
 For each threat, the risk must be determined. The defined risk assessment methodology can be used for this purpose.
 
 Risk is composed both of the impact when a risk is manifested as well as the likelihood that the risk will manifest. Impact can be assessed in a risk assessment and is primarily based on the data which the service handles. Likelihood on the other hand is primarily driven by the presence or absence of security controls in the service.
 
-Risk is commonly defined as: <b>risk = impact \* likelihood</b>
+Risk is commonly defined as: **risk = impact \* likelihood**
 
 For each identified threat, the risk must be assessed.
 
@@ -139,13 +167,13 @@ For each risk, the risk treatment option must be determined.
 
 Risk treatment options:
 
-- <b>Avoid</b> - deciding not to proceed with the activity that introduced the unacceptable risk, choosing an alternative more acceptable activity that meets business objectives, or choosing an alternative less risky approach or process.
+- **Avoid** - deciding not to proceed with the activity that introduced the unacceptable risk, choosing an alternative more acceptable activity that meets business objectives, or choosing an alternative less risky approach or process.
 
-- <b>Reduce</b> - implementing a strategy that is designed to reduce the likelihood or consequence of the risk to an acceptable level, where elimination is considered to be excessive in terms of time or expense.
+- **Reduce** - implementing a strategy that is designed to reduce the likelihood or consequence of the risk to an acceptable level, where elimination is considered to be excessive in terms of time or expense.
 
-- <b>Transfer</b> - implementing a strategy that shares or transfers the risk to another party or parties, such as outsourcing the management of physical assets, developing contracts with service providers or insuring against the risk. The third-party accepting the risk should be aware of and agree to accept this obligation.
+- **Transfer** - implementing a strategy that shares or transfers the risk to another party or parties, such as outsourcing the management of physical assets, developing contracts with service providers or insuring against the risk. The third-party accepting the risk should be aware of and agree to accept this obligation.
 
-- <b>Accept</b> - making an informed decision that the risk rating is at an acceptable level or that the cost of the treatment outweighs the benefit. This option may also be relevant in situations where a residual risk remains after other treatment options have been put in place. No further action is taken to treat the risk, however, ongoing monitoring is recommended.
+- **Accept** - making an informed decision that the risk rating is at an acceptable level or that the cost of the treatment outweighs the benefit. This option may also be relevant in situations where a residual risk remains after other treatment options have been put in place. No further action is taken to treat the risk, however, ongoing monitoring is recommended.
 
 In an ideal world, a risk treatment plan can be created. Unfortunately, this is usually unrealistic and creates more overhead than benefit.
 

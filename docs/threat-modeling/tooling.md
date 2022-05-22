@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 8
 ---
 
 # Tooling
@@ -26,7 +26,7 @@ Another option is to create your own threat modeling tool. It's not rocket scien
 
 With the help of a low code platform such a tool can be created within a day!
 
-:::danger Take care
+:::info Take care
 
 Because threat models contain mostly confidential data, it is important to pay attention to where the data is stored.
 
