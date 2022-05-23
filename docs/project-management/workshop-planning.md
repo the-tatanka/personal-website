@@ -38,6 +38,8 @@ End states fall into one or more common categories, such as:
 
 - Strengthening: Building empathy between teams or strengthening relationships between parties
 
+When setting goals, work with SMART goals, which are: Specific, Measurable, Attainable, Realistic, and Time-based.
+
 ## 2. Document what information you need in the form of questions
 
 Typically, there is a gap between your current state and the goal state you have just articulated.
