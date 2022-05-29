@@ -6,7 +6,7 @@ sidebar_position: 3
 
 Often there is no time or resources available for a detailed security assessment.
 
-Therefore, an security assessment is needed that can be performed very rapidly - similar to **Rapid Risk Assessment (RRA)** from Mozillla.
+Therefore, an security assessment is needed that can be performed very rapidly - similar to **Rapid Risk Assessment (RRA) from Mozillla**.
 
 The most important assets in an service are the data. That is why this approach is based on the data processed, stored or simply accessible by services.
 
@@ -20,11 +20,13 @@ Do not forget that it is a rapid assessment that does not include controls.
 
 Worst case scenarios are considered, therefore only the impact rating.
 
+See [risk and impact metrics](./metrics.md).
+
 ## Process
 
 1. Create an assessment page / document with the assessment template
 
-2. Send invitation to project teams with email kickoff template:
+2. Send invitation to project teams containing:
 
 - Agenda
 
@@ -46,57 +48,7 @@ Worst case scenarios are considered, therefore only the impact rating.
 
 5. Make recommendations
 
-6. Send follow-up invitation with email follow-up template
-
-7. Discuss recommendations with project team
-
-## Email Kickoff Template
-
-Dear \<REPLACEME\>,
-
-this is the kick-off appointment for the rapid security assessment of your project \<REPLACEME\>.
-
-Agenda:
-
-- Short introduction
-
-- Presentation of rapid security assessment objectives
-
-- Arrangement of collaboration
-
-- Rapid security assessment
-
-The main scope of the meeting will be the Services Notes and Data list: \<REPLACEME - Rapid Risk Assessment page link\>.
-
-**Please fill in sections 1 and 2** - the questionnaire does not need to be filled in.
-
-Our Rapid Risk Assessment objectives are:
-
-- Identify what the mission-critical, processing sensitive or valuable data is
-
-- Identify potential threats and their risks
-
-- Proposal for the treatment of risks
-
-Kind regards
-
-\<REPLACEME\>
-
-## Email Follow-up Template
-
-Dear \<REPLACEME\>,
-
-as promised, here is the invitation for the rapid security assessment’s follow-up meeting.
-
-The objectives of the follow-up meeting are:
-
-- Presentation of threats and risks
-
-- Presentation of the risk mitigation recommendations
-
-Kind regards
-
-\<REPLACEME\>
+6. Discuss recommendations with project team
 
 ## Assessment Template
 
