@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Useful Security Stuff
 
-List of useful security related topics.
+List of useful security related materials. All of the listed training materials are free:
 
 - Security [SANS glossary-of-terms](https://www.sans.org/security-resources/glossary-of-terms/)
 
@@ -17,6 +17,12 @@ List of useful security related topics.
 - [Chief Information Security Officer (CISO) Workshop](https://docs.microsoft.com/en-us/security/ciso-workshop/ciso-workshop) - collection of security learnings, principles, and recommendations for modernizing security in your organization
 
 - [AWS security awareness](https://learnsecurity.amazon.com/)
+
+- [Lenny Zeltser](https://zeltser.com/) - Information Security in Business
+
+  - How to [Suck at Information Security](https://zeltser.com/suck-at-security-cheat-sheet/)
+
+  - A Product Management Framework for [Creating Security Products](https://zeltser.com/security-product-creation-framework/)
 
 ## OWASP
 

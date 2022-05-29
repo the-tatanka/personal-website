@@ -10,9 +10,11 @@ It doesn't solve the problem. The threats and risks are not solved until they ar
 
 The section [Security Assessment](./security-assessment.md) explains how to perform threat modeling.
 
-## Training materials
+The section [Rapid Security Assessment](./rapid-security-assessment.md) explains how to perform threat modeling very rapidly.
 
-All of the listed training materials are free, can also be useful for other security areas than threat modeling.
+## Training Materials
+
+All of the listed training materials are free:
 
 - Microsoft - [Threat Modeling Security Fundamentals](https://docs.microsoft.com/en-us/learn/paths/tm-threat-modeling-fundamentals/)
 

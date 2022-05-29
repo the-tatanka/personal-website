@@ -16,7 +16,7 @@ Use the following elements:
 
 - External Interactor: Is an element that is outside your area of control. It could be a user calling into an API, it could be another component (browser, user) but not one that's being threat modeled.
 
-- Process: A process is simply some code (or microservice). It does NOT mean that it's a "process" as OS's call processes, instead it's just a collection of code.
+- Process: A process is simply some code (or microservice). It does NOT mean that it's a _process_ as OS's call processes, instead it's just a collection of code.
 
 - Data Store: A datastore is something that holds data.
 
@@ -61,9 +61,9 @@ For each element type, the following threats are considered valid:
 
 ## STRIDE-per-element
 
-We call this process of considering the element-specific threats to each element in the DFD "STRIDE-per-Element".
+We call this process of considering the element-specific threats to each element in the DFD _STRIDE-per-Element_.
 
-And the best part about it is that STRIDE/element allows people to produce competent threat models with relatively little training.
+And the best part about it is that STRIDE allows people to produce competent threat models with relatively little training.
 
 The STRIDE-per-element methodology ends up creating a fair number of threats, even a component with a relatively tiny diagram. The good news is that many/most of those threats aren't meaningful threats.
 
@@ -107,7 +107,7 @@ For each identified threat, the risk must be assessed.
 
 [The metrics and descriptions were taken from Mozilla.](https://infosec.mozilla.org/guidelines/assessing_security_risk)
 
-## Impact
+### Impact
 
 Impact is the potential result that can be produced by the weakness, assuming that the weakness can be successfully reached and exploited.
 
@@ -123,43 +123,19 @@ Assessing impact is a relatively finite, quantitative exercise:
 
 Risk impact generally does not change quickly over time unless services and products are redesigned, large features are added, new types of data is processed, etc.
 
-| Level   | Description                                                                                                             |
-| ------- | ----------------------------------------------------------------------------------------------------------------------- |
-| Low     | Minimal control over the software being analyzed, or only access to relatively unimportant information can be obtained. |
-| Medium  | Moderate control over the software being analyzed, or access to moderately important information can be obtained.       |
-| High    | Significant control over the software being analyzed, or access to critical information can be obtained.                |
-| Maximum | Complete control over the software being analyzed, to the point where operations cannot take place.                     |
+See [impact metric](./metrics.md).
 
-## Likelihood
+### Likelihood
 
 The likelihood that a vulnerability in the service will be exploited in a calendar year due to the absence of security controls.
 
-| Level   | Description                                                                                                                                                                            |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Low     | Due to the absence of security controls, an attacker probably would not target this weakness, or could have very limited chances of success.                                           |
-| Medium  | Due to the absence of security controls, an attacker would probably target this weakness successfully, but the chances of success might vary, or require multiple attempts to succeed. |
-| High    | Due to the absence of security controls, it is highly likely that an attacker would target this weakness successfully, with a reliable exploit that is easy to develop.                |
-| Maximum | The absence of security controls will cause a risk.                                                                                                                                    |
+See [likelihood metric](./metrics.md).
 
-## Risk
+### Risk
 
-Risk is determined based on this risk metric.
+Risk is determined based on [this risk metric](./metrics.md).
 
 The risk levels also represent a simplified ISO 31000 equivalent (and are non-compliant with ISO 31000).
-
-| Level   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Maximum | This is the most important level, where the risk is especially great. <ul><li>Attention: Full attention from all concerned parties required. </li><li>Impact: High or maximum impact.</li><li>Effort: All resources engaged on fixing issues. Following standard/guidelines is required.</li><li>Risk acceptance: Rarely accepted as residual risk, must be discussed, and must be mitigated or remediated.</li><li>Exception time (SLA): Recommend fixing immediately.</li></ul> |
-| High    | <ul><li>Attention: Full attention from all concerned parties required.</li><li>Impact: Medium, high or maximum impact.</li><li>Effort: Some key resources engaged on fixing the issue. Following standard/guidelines is required.</li><li>Risk acceptance: Risk must be discussed, and must at least be mitigated.</li><li>Exception time (SLA): Recommend remediation within 7 days.</li></ul>                                                                                   |
-| Medium  | <ul><li>Attention: Attention from all concerned parties.</li><li>Impact: Low, medium or high impact.</li><li>Effort: Best effort. Following standard/guidelines is required.</li><li>Risk acceptance: Risk should be discussed, and at least mitigated.</li><li>Exception time (SLA): Recommend remediation within 90 days.</li></ul>                                                                                                                                             |
-| Low     | <ul><li>Attention: Expected but not required.</li><li>Impact: Low or medium impact.</li><li>Effort: Best effort and best practices expected.</li><li>Risk acceptance: Risk may often be accepted as residual risk.</li><li>Exception time (SLA): Indefinitely.</li></ul>                                                                                                                                                                                                          |
-
-| Likelihood (x) \ Impact (y) | Low    | Medium | High    | Maximum |
-| --------------------------- | ------ | ------ | ------- | ------- |
-| Low                         | Low    | Low    | Medium  | Medium  |
-| Medium                      | Low    | Medium | High    | High    |
-| High                        | Medium | High   | High    | Maximum |
-| Maximum                     | Medium | High   | Maximum | Maximum |
 
 ## Risk Treatment
 
