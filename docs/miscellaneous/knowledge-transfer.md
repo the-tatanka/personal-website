@@ -6,6 +6,10 @@ sidebar_position: 4
 
 Knowledge transfer within a company is a major challenge.
 
+_I look for stuff, I know it's documented, I often don't find it._
+
+You expect intranet search to work like Google, and you're disappointed when it doesn't. Lack of success diminished confidence and led you to abandon search altogether, assuming it wouldn't work.
+
 Companies consist of teams and departments with different services and skills, as well as information. The aim is to make this information accessible and transparent to all colleagues.
 
 For consultants only - of course the code documentation should be with the code itself. And yes, there is information that should not be available to all colleagues.
@@ -17,8 +21,6 @@ There are many ways to organize the exchange of information. The most efficient 
 However, not all colleagues or teams agree to use one place to share information.
 
 Nevertheless, colleagues must be provided with a simple and effective way to exchange information within the company - the **intranet search**.
-
-Colleagues expect the intranet’s search to work like Google and are disappointed when it doesn't. Lack of success degraded trust and led employees to stop using search altogether, as they assumed it wouldn’t work.
 
 Design practices for improving intranet search:
 
