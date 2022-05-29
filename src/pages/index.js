@@ -114,7 +114,7 @@ export default function Home() {
                       tags={["New"]}
                       date="July 2022"
                       url="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                      platform="Medium"
+                      platform="Social"
                     />
                   </FadeIn>
 
@@ -124,17 +124,17 @@ export default function Home() {
                       tags={["New"]}
                       date="June 2022"
                       url="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                      platform="Medium"
+                      platform="Social"
                     />
                   </FadeIn>
 
                   <FadeIn delay={600}>
                     <Blog
                       title="Tech Stacks - simple is better"
-                      tags={["New"]}
+                      tags={["New", "Rocky"]}
                       date="July 2022"
                       url="https://www.wix.com/blog/2020/03/how-to-make-a-personal-website/"
-                      platform="Medium"
+                      platform="Social"
                     />
                   </FadeIn>
                 </div>
