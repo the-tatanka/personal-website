@@ -6,6 +6,32 @@ sidebar_position: 2
 
 Basic understanding of GitHub and GitHub Actions is necessary.
 
+## GitHub Limitation and Solution
+
+TODO Vendor Lock-In ...
+
+- SARIF dashboard is expensive!
+
+- Use backlog or issue board as dashboard
+
+- One issue equals one security finding
+
+- Stick to the SARIF standard
+
+  - Much easier integration of future tools
+
+- Use issue tags like _security_ to filter issues and separate them from the other issues
+
+- Using the findings as issues makes it easier to integrate the mitigation into their dev workflow
+
+- Create one GitHub Action that exports findings to the used issue board (Jira, GitHub, ...)
+
+  - Auto create and close issues
+
+  - Use SARIF values to create meaningful issues
+
+  - Check for duplicates - use some sort of ID to track duplicates
+
 ## Workflow Strategy
 
 ```mermaid
@@ -22,15 +48,15 @@ graph TD
 
 ## Branch Protection Rules
 
-The main / master branch must be blocked. You are only allowed to commit to them if all security <b>status checks</b> of the actions are successful.
+The main / master branch must be blocked. You are only allowed to commit to them if all security **status checks** of the actions are successful.
 
-![Branch protection rules](./branch_protection_rules.webp)
+![Branch protection rules](./assets/branch_protection_rules.webp)
 
 The actions can be configured to run for each pull request.
 
 This ensures that all security status checks are checked before the release of the main/master branch takes place.
 
-![Pull request status checks](./pull_request_status_checks.webp)
+![Pull request status checks](./assets/pull_request_status_checks.webp)
 
 ## Pre-Commit Hooks
 
@@ -88,7 +114,7 @@ Official github documentation:
 
 - https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases
 
-<b>semantic-release</b> automates the whole package release workflow including: determining the next version number, generating the release notes, and publishing the package.
+**semantic-release** automates the whole package release workflow including: determining the next version number, generating the release notes, and publishing the package.
 
 - https://github.com/semantic-release/semantic-release
 
@@ -100,7 +126,7 @@ Tools such as commitizen or commitlint can be used to help contributors and enfo
 
 The commit messages are checked for quality. The quality guidelines are determined by https://www.conventionalcommits.org/.
 
-With the devDependency packages <b>commitlint/cli</b> and <b>commitlint/config-conventional</b> enforce the quality.
+With the devDependency packages **commitlint/cli** and **commitlint/config-conventional** enforce the quality.
 
 The Commitizen tool is used to create quality commit messages. Commitizen must be installed locally:
 
