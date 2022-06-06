@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Rapid Security Assessment
 
+Template for rapid security assessment.
+
 ## Rapid Security Assessment for _REPLACEME Service_
 
 |                             |     |
@@ -16,7 +18,7 @@ sidebar_position: 1
 | Status                      |     |
 | RRA responsibles            |     |
 
-## 1. Service Notes
+### 1. Service Notes
 
 <p style={{color: "grey", fontStyle: "italic"}}>How does the service work? Do we have diagrams, demos, examples? Is the service in production yet?</p>
 <p style={{color: "grey", fontStyle: "italic"}}>Please describe (or link) the items.</p>
@@ -26,7 +28,7 @@ sidebar_position: 1
 <br />
 <br />
 
-## 2. Data
+### 2. Data
 
 <p style={{color: "grey", fontStyle: "italic"}}>We want to know about all data the service will process, store or receive (and not just store). Any data the service can touch or see must be considered.</p>
 
@@ -35,7 +37,7 @@ sidebar_position: 1
 <br />
 <br />
 
-## 3. Threats
+### 3. Threats
 
 <p style={{color: "grey", fontStyle: "italic"}}>CIA per data.</p>
 
@@ -44,7 +46,7 @@ sidebar_position: 1
 <br />
 <br />
 
-### _REPLACEME Data_
+#### _REPLACEME Data_
 
 - Affecting confidentiality
 
@@ -57,7 +59,7 @@ sidebar_position: 1
 <br />
 <br />
 
-## 4. Risks
+### 4. Risks
 
 <p style={{color: "grey", fontStyle: "italic"}}>Risk is commonly defined as: risk = impact</p>
 
@@ -66,7 +68,7 @@ sidebar_position: 1
 <br />
 <br />
 
-## 5. Recommendations
+### 5. Recommendations
 
 <p style={{color: "grey", fontStyle: "italic"}}>Recommendations are ordered by how much risk we're taking by not implementing the recommendation.</p>
 
