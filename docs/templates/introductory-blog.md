@@ -8,9 +8,7 @@ When you begin in a new role or at a new company, creating a blog to introduce y
 
 Taken from [Confluence templates](https://www.atlassian.com/software/confluence/templates/introductory-blog).
 
-## _REPLACEME Name_
-
-Hi, my name is _REPLACEME_
+## Hi, my name is _REPLACEME Name_
 
 ![_REPLACEME Insert a photo of yourself_](./assets/bike_1.webp)
 
