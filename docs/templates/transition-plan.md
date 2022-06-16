@@ -10,7 +10,7 @@ Taken from [Confluence templates](https://www.atlassian.com/software/confluence/
 
 ## Transition Plan _REPLACEME Name_
 
-Dear _REPLACEME SUCCESSORS Name_,
+Dear _REPLACEME Successor Name_,
 
 this job transition plan outlines my standard duties, outstanding projects, people to contact for more information, and any other important points to replay to assist my sucessor.
 
