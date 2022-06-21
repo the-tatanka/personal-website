@@ -47,6 +47,14 @@ Measure what matters - if you're collecting data just for the sake of having mor
 
 ## Objectives and Key Results (OKR)
 
+:::info TODO
+
+https://herbig.co/okrs-product-management/#:~:text=By%20design%2C%20Outcome%20OKRs%20don,don't%20talk%20about%20features.
+
+https://medium.com/starting-up-security/how-to-measure-risk-with-a-better-okr-c259bccf359e
+
+:::
+
 An OKR is a simple tool to align and engage everyone at the company around measurable goals.
 
 Think of the objective in OKRs as a "strategic theme", a broad, overarching, qualitative headline of what is to be achieved. The objective’s key results resemble KPIs (Key Performance Indicators). The key result can be either a metric or a measurable milestone.
